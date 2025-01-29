@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="210mm"
+   height="297mm"
+   viewBox="0 0 210 297"
+   version="1.1"
+   id="svg1"
+   xml:space="preserve"
+   inkscape:version="1.3.2 (091e20e, 2023-11-25, custom)"
+   sodipodi:docname="icon.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"><sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#999999"
+     borderopacity="1"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     inkscape:zoom="0.90331701"
+     inkscape:cx="392.99603"
+     inkscape:cy="445.58001"
+     inkscape:window-width="2880"
+     inkscape:window-height="1514"
+     inkscape:window-x="2869"
+     inkscape:window-y="-11"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" /><defs
+     id="defs1" /><g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"><path
+       d="M 0.35511933,80.572668 V 251.71402 H 210.15255 V 139.90525 H 192.4989 L 179.43992,80.961351 h 30.15423 l 0.5584,2.520727 v -2.90941 z"
+       style="fill:#f3bdbf;stroke-width:1.79763;stroke-linecap:square;stroke-miterlimit:0;stroke-opacity:0;paint-order:fill markers stroke;fill-opacity:1"
+       id="path3" /><path
+       id="rect2"
+       style="fill:#de4048;stroke-width:2.023;stroke-linecap:square;stroke-miterlimit:0;stroke-opacity:0;paint-order:fill markers stroke"
+       d="M 0.09314894,80.807432 13.15212,149.21144 H 43.305678 L 30.24737,80.807432 Z" /><path
+       d="m 210.15255,83.949027 -0.5584,-2.925298 h -30.15423 l 13.05898,68.404011 h 17.65365 z"
+       style="fill:#de4048;stroke-width:2.023;stroke-linecap:square;stroke-miterlimit:0;stroke-opacity:0;paint-order:fill markers stroke"
+       id="path5" /><path
+       id="rect2-0-8"
+       style="fill:#de4048;stroke-width:2.023;stroke-linecap:square;stroke-miterlimit:0;stroke-opacity:0;paint-order:fill markers stroke"
+       d="m 119.3385,80.95365 13.05897,68.40401 h 30.15356 L 149.49271,80.95365 Z" /><path
+       id="rect2-0-6"
+       style="fill:#de4048;stroke-width:2.023;stroke-linecap:square;stroke-miterlimit:0;stroke-opacity:0;paint-order:fill markers stroke"
+       d="M 59.882063,81.038265 72.941035,149.44228 H 103.0946 L 90.036284,81.038265 Z" /></g></svg>
