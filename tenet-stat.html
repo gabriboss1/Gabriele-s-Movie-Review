@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" type="image/svg" href="assets/hexagon.svg">
+    <title>Inception</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz@0,14..32;1,14..32&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap">
+</head>
+<body>
+    <div class="banner">
+        <a href="index.html" class="title"><h1>Gabriele's Movie Review</h1></a>
+        <span class="menu-icon" onclick="toggleMenu()">&#9776;</span>
+    </div>
+    
+    <div class="side-menu" id="side-menu">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+    
+    <div class="stat">
+        <div class="stat-info">
+            <img src="movies/tenet/tenet.jpg" alt="Inception" class="stat-thumbnail">
+            <div class="stat-details">
+                <h3 class="stat-title">Tenet</h3>
+                <p>WARNER BROS. <a> • </a>  AUGUST 26, 2020 <a> </a><a> </a><a> </a><a> </a><a> </a><a> </a><a> </a><a> </a><a> </a><a> </a><a> </a><a> </a><a> </a><a> </a></p>
+                <p>SCI-FI/ACTION <a> • </a> 2H30</p>
+                <div>
+                    <div class="stat-hexagon">
+                        <span class="hexagon-text">10</span>
+                    </div>
+                    <div class="stat-rating">
+                        <p>Amazing</p>
+                    </div>                
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="screenshots">
+        <h3 class="screenshots-main-title">Images</h3>
+        <div class="screenshots-gallery">
+            <img src="movies/tenet/image2.webp" alt="Screenshot 1" class="gallery-img scr1" onclick="openModal();currentSlide(1)">
+            <img src="movies/tenet/image4.webp" alt="Screenshot 2" class="gallery-img scr2" onclick="openModal();currentSlide(2)">
+            <img src="movies/tenet/image5.webp" alt="Screenshot 3" class="gallery-img scr3" onclick="openModal();currentSlide(3)">
+            <img src="movies/tenet/image6.webp" alt="Screenshot 3" class="gallery-img scr4" onclick="openModal();currentSlide(4)">
+            <img src="movies/tenet/image7.webp" alt="Screenshot 5" class="gallery-img scr5" onclick="openModal();currentSlide(5)">
+        </div>
+        
+        <div id="myModal" class="modal">
+            <span class="close cursor" onclick="closeModal()">&times;</span>
+            <div class="modal-content">
+        
+                <div class="mySlides">
+                    <div class="numbertext">1 / 5</div>
+                    <img src="movies/tenet/image2.webp" style="width:100%">
+                </div>
+        
+                <div class="mySlides">
+                    <div class="numbertext">2 / 5</div>
+                    <img src="movies/tenet/image4.webp" style="width:100%">
+                </div>
+        
+                <div class="mySlides">
+                    <div class="numbertext">3 / 5</div>
+                    <img src="movies/tenet/image5.webp" style="width:100%">
+                </div>
+        
+                <div class="mySlides">
+                    <div class="numbertext">4 / 5</div>
+                    <img src="movies/tenet/image6.webp" style="width:100%">
+                </div>
+        
+                <div class="mySlides">
+                    <div class="numbertext">5 / 5</div>
+                    <img src="movies/tenet/image7.webp" style="width:100%">
+                </div>
+                
+                <!-- Next/previous controls -->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        
+                <!-- Caption text -->
+                <div class="caption-container">
+                    <p id="caption"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="stat-review">
+        <h3 class="stat-main-title">Tenet Review</h3>
+        <div class="stat-review-header">
+            <div class="hexagon-container">
+                <div class="score-hexagon">10</div>
+            </div>
+            <div class="stat-review-title">
+                <h2>Amazing</h2>
+                <div class="stat-review-description">
+                    <p>Tenet is a bold, mind-bending thriller that redefines the boundaries of time and storytelling.</p>
+                </div>
+                <div class="author">
+                    <img src="assets/author-icon.jpg" alt="Author Icon" style="width: 24px; height: 24px; border-radius: 50%;">
+                    <span><a href="gabriele.html">Gabriele Bosoni</a></span>
+                </div>
+                <div class="review-button">
+                    <a href="tenet.html" class="button">Read Review</a>
+                </div>
+            </div>
+            <div class="trailer-container">
+                <iframe class="trailer" width="300" height="169" src="https://www.youtube.com/embed/LdOM0x0XDMo" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+
+    <div class="summary">
+        <h3 class="summary-main-title">Summary</h3>
+        <p><em>Tenet</em> is a mind-bending sci-fi thriller directed by Christopher Nolan that delves into the manipulation of time. The film follows a protagonist (John David Washington), a CIA agent recruited by a mysterious organization known as Tenet, tasked with preventing a global catastrophe. Armed with the knowledge of "inversion"—a concept that allows objects and people to move backward through time—he embarks on a mission across the globe, facing challenges that bend the laws of physics and perception. With explosive action, complex time loops, and a high-stakes narrative, <em>Tenet</em> keeps audiences on the edge of their seats, questioning the very nature of time and reality.</p>
+    </div>
+
+
+    <div class="footer">
+        <p>&copy; 2025 Gabriele's Movie Review. All rights reserved.</p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" type="image/svg" href="assets/hexagon.svg">
+    <title>Inception Review</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz@0,14..32;1,14..32&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap">
+</head>
+<body>
+    <div class="banner">
+        <a href="index.html" class="title"><h1>Gabriele's Movie Review</h1></a>
+        <span class="menu-icon" onclick="toggleMenu()">&#9776;</span>
+    </div>
+    
+    <div class="side-menu" id="side-menu">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </div>   
+
+    <article class="review-article">
+        <a href="interstellar-stat.html" class="movie-link">INTERSTELLAR</a>
+        <header class="review-header">
+            <h1>Interstellar Review</h1>
+            <m>A visually stunning exploration of space and time.</m>
+        </header>
+
+        <!-- Featured Image -->
+        <div class="article-img-container">
+            <img src="movies/interstellar/interstellar-image.webp" alt="Inception Image" class="article-img">
+        </div>
+
+        <div class="metadata-container">
+            <div class="author">
+                <img src="assets/author-icon.jpg" alt="Author Icon" style="width: 24px; height: 24px; border-radius: 50%;">
+                <span>BY <a href="gabriele.html">GABRIELE BOSONI</a></span>
+            </div>
+            <div class="metadata">
+                <span>UPDATED: JAN 22, 2025 11:01 PM</span>
+                <span>POSTED: JAN 22, 2025 8:14 PM</span>
+            </div>
+        </div>
+        
+        <div class="review-content">
+            <section>
+                <p>
+                    Christopher Nolan's <em>Interstellar</em> is a breathtaking odyssey that transcends the limits of space, time, and human endurance. Released in 2014, this epic sci-fi adventure takes audiences beyond our solar system, into the vast unknown, where black holes, time dilation, and the survival of humanity collide in an emotionally charged narrative. At its core, <em>Interstellar</em> is a story of love and sacrifice—of a father navigating the cosmos to secure a future for his children on Earth. With its stunning practical effects, scientifically grounded concepts, and Hans Zimmer’s ethereal score, <em>Interstellar</em> is both a visual marvel and an emotional journey. It compels viewers to ponder the vastness of the universe, the relativity of time, and the unbreakable bonds that connect us, no matter the distance.
+                </p>
+            </section>
+            
+            <section>
+                <h2>The Stellar Cast</h2>
+                <p>The cast of <em>Interstellar</em> is nothing short of extraordinary, with Matthew McConaughey delivering a career-defining performance as Cooper, a former pilot turned reluctant space traveler on a mission to save humanity. McConaughey brings raw emotion to the role, balancing Cooper’s scientific brilliance with his deep love for his daughter, Murph. His portrayal is both gripping and deeply human, making the audience feel every triumph and heartbreak along the way.</p>
+                
+                <p>Jessica Chastain shines as the adult Murph, whose unwavering determination and intelligence drive some of the film’s most emotional moments. Her performance captures both the weight of abandonment and the fire of discovery, making her a crucial anchor to the story. Mackenzie Foy, who plays young Murph, delivers an equally powerful performance, making the father-daughter bond at the heart of the film feel incredibly real.</p>
+                
+                <p>Anne Hathaway's portrayal of Dr. Brand adds complexity and depth to the narrative, as she wrestles with the intersection of science and emotion. Meanwhile, Michael Caine lends gravitas to the film as Professor Brand, offering wisdom and guidance while holding secrets of his own. Rounding out the ensemble, Wes Bentley, Casey Affleck, Topher Grace, and David Gyasi bring compelling performances, while Matt Damon’s unexpected appearance as Dr. Mann provides one of the film’s most intense and unsettling moments.</p>
+                
+                <p>With such a powerhouse cast, <em>Interstellar</em> is elevated beyond a typical sci-fi epic—it becomes a deeply personal and emotional journey that resonates long after the credits roll.</p>
+                <p></p>
+            </section>
+
+            <div class="image-gallery">
+                <img src="movies/interstellar/image1.jpg" alt="Screenshot 1" class="gallery-img img1" onclick="openModal();currentSlide(1)">
+                <img src="movies/interstellar/image1.webp" alt="Screenshot 2" class="gallery-img img2" onclick="openModal();currentSlide(2)">
+                <img src="movies/interstellar/image2.webp" alt="Screenshot 3" class="gallery-img img3" onclick="openModal();currentSlide(3)">
+                <img src="movies/interstellar/image3.webp" alt="Screenshot 4" class="gallery-img img4" onclick="openModal();currentSlide(4)">
+                <img src="movies/interstellar/image4.webp" alt="Screenshot 5" class="gallery-img img5" onclick="openModal();currentSlide(5)">
+            </div>
+            
+            <!-- The Modal/Lightbox -->
+            <div id="myModal" class="modal">
+                <span class="close cursor" onclick="closeModal()">&times;</span>
+                <div class="modal-content">
+            
+                    <div class="mySlides">
+                        <div class="numbertext">1 / 5</div>
+                        <img src="movies/interstellar/image1.jpg" style="width:100%">
+                    </div>
+            
+                    <div class="mySlides">
+                        <div class="numbertext">2 / 5</div>
+                        <img src="movies/interstellar/image1.webp" style="width:100%">
+                    </div>
+            
+                    <div class="mySlides">
+                        <div class="numbertext">3 / 5</div>
+                        <img src="movies/interstellar/image2.webp" style="width:100%">
+                    </div>
+            
+                    <div class="mySlides">
+                        <div class="numbertext">4 / 5</div>
+                        <img src="movies/interstellar/image3.webp" style="width:100%">
+                    </div>
+            
+                    <div class="mySlides">
+                        <div class="numbertext">5 / 5</div>
+                        <img src="movies/interstellar/image4.webp" style="width:100%">
+                    </div>
+                        
+                    <!-- Next/previous controls -->
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            
+                    <!-- Caption text -->
+                    <div class="caption-container">
+                        <p id="caption"></p>
+                    </div>
+                </div>
+            </div>     
+            
+            <p></p>
+            
+            <h1>I’m in awe of time’s relativity and the emotional weight it carries.</h1>
+            <hr>
+            
+            <section>
+                <p><em>Interstellar</em> isn’t just a space epic; it’s a profound meditation on love, sacrifice, and the relentless march of time. At its core, the film tells the story of Cooper, a father torn between his duty to save humanity and his devotion to his daughter, Murph. Their bond transcends both distance and time, making the film’s exploration of relativity all the more poignant. Every hour spent on Miller’s planet costs years back on Earth, turning the passage of time into a cruel force of nature rather than just an abstract concept.</p>
+
+                <p>The film’s depiction of black holes and time dilation serves as more than just scientific theory—it becomes a metaphor for the way we experience love and loss. Just as gravity warps space and time, our deepest emotions shape our perceptions of reality. Cooper’s journey isn’t just across the galaxy; it’s a journey through grief, hope, and the unbreakable ties between parent and child.</p>
+                
+                <p>But perhaps the most profound idea in <em>Interstellar</em> is its take on human connection as a force beyond science. Dr. Brand’s speech about love being the one thing that transcends dimensions is a defining moment, challenging the notion that logic alone can solve the universe’s greatest mysteries. When Cooper enters the tesseract, guided by an unseen intelligence, he realizes that he himself was the ‘ghost’ guiding Murph all along—proving that their bond was never bound by time, but rather by something far greater.</p>
+                
+                <p>With its blend of cutting-edge science and deep emotional storytelling, <em>Interstellar</em> is more than a space adventure—it’s a film that dares to ask what truly connects us across time, space, and beyond.</p>
+            </section>
+            
+            <h1>The sights and sounds of space make this journey unforgettable.</h1>
+            <hr>
+
+            <section>
+                <p>The visuals in <em>Interstellar</em> are nothing short of breathtaking, capturing both the vast emptiness of space and the intimate struggles of human survival. From the desolate beauty of distant planets to the hauntingly realistic black hole, Gargantua, Christopher Nolan and cinematographer Hoyte van Hoytema craft a film that feels as vast as the cosmos itself. Every frame is meticulously composed to emphasize both the grandeur of space and the isolation of the characters navigating it.</p>
+                
+                <p>One of the most remarkable aspects of <em>Interstellar</em> is its commitment to scientific accuracy. Working closely with physicist Kip Thorne, the film presents some of the most realistic depictions of black holes and time dilation ever put on screen. The swirling accretion disk of Gargantua wasn’t just stunning—it was a scientifically precise simulation that even contributed to astrophysical research. This level of authenticity makes the film’s exploration of space feel tangible, blurring the line between science fiction and reality.</p>
+                
+                <p>But it’s not just the visuals that leave an impact—it’s Hans Zimmer’s soaring score. Unlike his bombastic compositions for <em>Inception</em> or <em>The Dark Knight</em>, Zimmer takes a more ethereal approach here, using organs to create a sense of wonder, urgency, and reverence. Tracks like "Cornfield Chase" and "No Time for Caution" perfectly encapsulate the film’s emotional weight, while the soft, lingering notes of "S.T.A.Y." amplify its deeply human core. The music doesn’t just accompany the story—it drives it, making the film’s most powerful moments hit even harder.</p>
+                
+                <p>Together, the groundbreaking visuals and transcendent score create an experience that goes beyond just a film—it’s an odyssey through space and time that lingers long after the credits roll. <em>Interstellar</em> isn’t just a spectacle; it’s a profound journey that reminds us of both the vastness of the universe and the connections that anchor us within it.</p>
+            </section>
+
+            <section>
+                <h2>Verdict</h2>
+                <p>At its core, <em>Interstellar</em> is more than just a sci-fi film—it's an emotional odyssey through space and time. Christopher Nolan has masterfully combined stunning visuals, a deeply personal story, and ambitious scientific concepts to create a film that lingers in the minds of viewers long after the credits roll. It’s a story about love, sacrifice, and the boundless human drive to explore the unknown, making it one of the most profound films in modern cinema.</p>
+                
+                <p>While some may find its scientific complexity and lengthy runtime overwhelming, that’s precisely what makes <em>Interstellar</em> special. It challenges audiences not only with astrophysics and time dilation but also with deeply human questions about love, loss, and survival. The emotional weight of Cooper’s journey, paired with Hans Zimmer’s transcendent score, creates a film that resonates on both an intellectual and personal level.</p>
+                
+                <p><em>Interstellar</em> is a rare cinematic achievement—one that blends spectacle with substance, science with emotion, and vast cosmic wonders with the intimate struggles of its characters. Whether you’re captivated by its scientific accuracy, breathtaking visuals, or deeply moving performances, there’s something in this film for everyone. Years after its release, it remains as thought-provoking, awe-inspiring, and emotionally powerful as ever. Love it or debate it, one thing is certain: <em>Interstellar</em> is a film that will stand the test of time.</p>
+            </section>
+
+            <p></p>
+
+            <h2>In This Article</h2>
+            
+            <!-- New Container After "In This Article" -->
+            <div class="in-this-article">
+                <a href="interstellar-stat.html">
+                    <img src="movies/interstellar/interstellar-image.webp" alt="Article Image" class="article-image">
+                </a>
+                <div class="article-details">
+                    <h3 class="article-title"><a href="interstellar-stat.html">Interstellar</a></h3>
+                    <p>WARNER BROS., PARAMOUNT PICTURES, FILMCOMPAGNIET</p>
+                    <p>NOVEMBER 7, 2014</p>
+                </div>
+            </div>
+
+            <div class="review">
+                <h3 class="review-main-title">Interstellar Review</h3>
+                <div class="review-header2">
+                    <div class="hexagon-container">
+                        <div class="score-hexagon">10</div>
+                    </div>
+                    <div class="review-title">
+                        <h2>Amazing</h2>
+                        <div class="review-description">
+                            <p>A visually stunning exploration of space and time.</p>
+                        </div>
+                        <div class="author">
+                            <img src="assets/author-icon.jpg" alt="Author Icon" style="width: 24px; height: 24px; border-radius: 50%;">
+                            <span><a href="gabriele.html">Gabriele Bosoni</a></span>
+                        </div>
+                    </div>
+                    <div class="trailer-container">
+                        <iframe class="trailer" width="300" height="169" src="https://www.youtube.com/embed/zSWdZVtXT7E" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+
+            
+
+        </div>
+    </article>
+
+    <!-- Footer -->
+    <div class="footer">
+        <p>&copy; 2025 Gabriele's Movie Review. All rights reserved.</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

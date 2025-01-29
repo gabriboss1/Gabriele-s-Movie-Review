@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" type="image/svg" href="assets/hexagon.svg">
+    <title>Inception Review</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz@0,14..32;1,14..32&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap">
+</head>
+<body>
+    <div class="banner">
+        <a href="index.html" class="title"><h1>Gabriele's Movie Review</h1></a>
+        <span class="menu-icon" onclick="toggleMenu()">&#9776;</span>
+    </div>
+    
+    <div class="side-menu" id="side-menu">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </div>   
+
+    <article class="review-article">
+        <a href="tenet-stat.html" class="movie-link">TENET</a>
+        <header class="review-header">
+            <h1>Tenet Review</h1>
+            <m>A time-twisting mission to prevent the end of the world.</m>
+        </header>
+
+        <!-- Featured Image -->
+        <div class="article-img-container">
+            <img src="movies/tenet/tenet-image.jpg" alt="Inception Image" class="article-img">
+        </div>
+
+        <div class="metadata-container">
+            <div class="author">
+                <img src="assets/author-icon.jpg" alt="Author Icon" style="width: 24px; height: 24px; border-radius: 50%;">
+                <span>BY <a href="gabriele.html">GABRIELE BOSONI</a></span>
+            </div>
+            <div class="metadata">
+                <span>UPDATED: JAN 28, 2025 11:09 PM</span>
+                <span>POSTED: JAN 27, 2025 10:47 PM</span>
+            </div>
+        </div>
+        
+        <div class="review-content">
+            <section>
+                <p>Released in 2020, <em>Tenet</em> is a high-concept espionage film that blends science fiction with Nolan’s signature narrative complexity. At its heart, the film follows a nameless protagonist who must navigate a world where time itself can be inverted. Instead of merely traveling through time, objects and people can move backward while the rest of the world progresses forward—leading to breathtaking action sequences and a story that demands intense focus.</p>
+                
+                <p>More than just a spy thriller, <em>Tenet</em> is an exploration of fate, free will, and the nature of time itself. With its intricate plot, stunning visuals, and Ludwig Göransson’s pulsating score, the film is an adrenaline-fueled puzzle designed to be experienced rather than simply understood. Whether you walk away exhilarated or baffled, one thing is certain: <em>Tenet</em> refuses to be forgotten.</p>
+            </section>
+            
+            <section>
+                <h2>The Temporal Task Force</h2>
+                <p>The cast of <em>Tenet</em> delivers dynamic performances, led by John David Washington as the Protagonist—a skilled operative thrust into a mission beyond conventional comprehension. Washington brings a quiet confidence to the role, grounding the film with his charisma and physicality while navigating its dizzying time mechanics. His chemistry with Robert Pattinson, who plays the enigmatic Neil, adds charm and intrigue, with Pattinson’s effortlessly cool presence making him one of the film’s standout characters.</p>
+                
+                <p>Elizabeth Debicki shines as Kat, whose emotional arc serves as the film’s emotional anchor. Her struggle against her manipulative husband, Andrei Sator—played with chilling intensity by Kenneth Branagh—adds a layer of personal stakes to the grander, time-warping spectacle. Meanwhile, Dimple Kapadia, Aaron Taylor-Johnson, and Himesh Patel provide key supporting performances that enrich the narrative’s intricate web of alliances and betrayals.</p>
+                
+                <p>Though the characters may feel less emotionally developed than in some of Nolan’s other works, the performances ensure that the story remains compelling amidst its relentless momentum. Together, this ensemble carries <em>Tenet</em> through its labyrinthine twists, making the ride as exhilarating as it is perplexing.</p>
+                <p></p>
+            </section>
+
+            <div class="image-gallery">
+                <img src="movies/tenet/image2.webp" alt="Screenshot 1" class="gallery-img img1" onclick="openModal();currentSlide(1)">
+                <img src="movies/tenet/image4.webp" alt="Screenshot 2" class="gallery-img img2" onclick="openModal();currentSlide(2)">
+                <img src="movies/tenet/image5.webp" alt="Screenshot 3" class="gallery-img img3" onclick="openModal();currentSlide(3)">
+                <img src="movies/tenet/image6.webp" alt="Screenshot 3" class="gallery-img img4" onclick="openModal();currentSlide(4)">
+                <img src="movies/tenet/image7.webp" alt="Screenshot 5" class="gallery-img img5" onclick="openModal();currentSlide(5)">
+            </div>
+            
+            <!-- The Modal/Lightbox -->
+            <div id="myModal" class="modal">
+                <span class="close cursor" onclick="closeModal()">&times;</span>
+                <div class="modal-content">
+            
+                    <div class="mySlides">
+                        <div class="numbertext">1 / 5</div>
+                        <img src="movies/tenet/image2.webp" style="width:100%">
+                    </div>
+            
+                    <div class="mySlides">
+                        <div class="numbertext">2 / 5</div>
+                        <img src="movies/tenet/image4.webp" style="width:100%">
+                    </div>
+            
+                    <div class="mySlides">
+                        <div class="numbertext">3 / 5</div>
+                        <img src="movies/tenet/image5.webp" style="width:100%">
+                    </div>
+            
+                    <div class="mySlides">
+                        <div class="numbertext">4 / 5</div>
+                        <img src="movies/tenet/image6.webp" style="width:100%">
+                    </div>
+            
+                    <div class="mySlides">
+                        <div class="numbertext">5 / 5</div>
+                        <img src="movies/tenet/image7.webp" style="width:100%">
+                    </div>
+
+                        
+                    <!-- Next/previous controls -->
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            
+                    <!-- Caption text -->
+                    <div class="caption-container">
+                        <p id="caption"></p>
+                    </div>
+                </div>
+            </div>     
+            
+            <p></p>
+            
+            <h1>I love how time isn't just a concept—it's a weapon.</h1>
+            <hr>
+            
+            <section>
+                <p><em>Tenet</em> doesn’t just play with time—it weaponizes it. The film’s core mechanic, "time inversion," turns traditional action sequences on their head, creating some of the most visually and conceptually ambitious set pieces in cinema. From bullets that return to their guns to entire battles waged in both forward and reverse time, <em>Tenet</em> makes time manipulation feel like a tangible force rather than a mere plot device.</p>
+
+                <p>Beyond its spectacle, the film’s exploration of time raises thought-provoking questions about determinism and agency. The protagonist is thrust into a reality where the future influences the past, yet he must still forge his own path. Neil’s cryptic hints and the film’s looping structure invite multiple viewings, each revealing new details that shift how the story is perceived. It’s a film that challenges audiences to rethink cause and effect, presenting time not as a straight line but as a complex, intertwined mechanism.</p>
+                
+                <p>Yet, for all its complexity, <em>Tenet</em> never loses its sense of urgency. The time mechanics don’t just exist for the sake of spectacle—they drive the narrative forward (and backward), making every moment feel crucial. Whether you find the film’s logic airtight or baffling, one thing is undeniable: its ambition is unlike anything else in modern cinema.</p>
+            </section>
+            
+            <h1>The Film’s Greatest Trick? Making Chaos Look Effortless.</h1>
+            <hr>
+
+            <section>
+                <p><em>Tenet</em> is a technical marvel, blending groundbreaking practical effects with masterful cinematography. Nolan’s decision to film action sequences in both forward and reverse time without excessive CGI results in some of the most breathtaking moments in recent film history. The hallway fights, car chases, and battle sequences feel unlike anything before, thanks to this commitment to in-camera effects.</p>
+
+                <p>Hoyte van Hoytema’s cinematography perfectly complements the film’s shifting perspectives, capturing both large-scale set pieces and intimate character moments with striking clarity. The decision to use IMAX cameras heightens the sense of scale, immersing the audience in <em>Tenet</em>’s high-stakes world.</p>
+                
+                <p>Then there’s Ludwig Göransson’s score, an essential element of the film’s relentless energy. The music, composed using time-reversed melodies and pulsating synths, creates a sense of unease and propulsion. The track <em>Posterity</em>, in particular, builds tension to an almost unbearable degree, while the film’s inverted audio design reinforces the eerie nature of time inversion.</p>
+                
+                <p>The result is a sensory overload—in the best way possible. <em>Tenet</em> is a film that demands to be seen on the biggest screen with the best sound system possible, proving that spectacle and storytelling can exist in perfect sync.</p>
+            </section>
+
+            <section>
+                <h2>Verdict</h2>
+                <p><em>Tenet</em> is a cinematic puzzle, a film that requires both patience and multiple viewings to fully appreciate. Christopher Nolan crafts a mind-bending experience that blends the grandeur of a spy thriller with the intellectual depth of a sci-fi epic. With its ambitious premise, jaw-dropping visuals, and an adrenaline-pumping score, it stands as one of the most daring blockbusters in recent memory.</p>
+
+                <p>That being said, the film’s complexity can be a double-edged sword. Some audiences may find its relentless pace and dense exposition overwhelming, while others will revel in the challenge of piecing together its narrative threads. It’s a film that doesn’t hold your hand—it throws you into the deep end and trusts you to swim.</p>
+                
+                <p>Despite its occasional narrative opacity, <em>Tenet</em> is a bold testament to the power of ambitious filmmaking. It rewards those willing to engage with it, offering an experience that continues to evolve with each rewatch. Whether you see it as a masterpiece or a riddle wrapped in chaos, one thing is undeniable: <em>Tenet</em> is a film that refuses to be forgotten.</p>
+            </section>
+
+            <p></p>
+
+            <h2>In This Article</h2>
+            
+            <!-- New Container After "In This Article" -->
+            <div class="in-this-article">
+                <a href="tenet-stat.html">
+                    <img src="movies/tenet/tenet-image.jpg" alt="Article Image" class="article-image">
+                </a>
+                <div class="article-details">
+                    <h3 class="article-title"><a href="tenet-stat.html">Tenet</a></h3>
+                    <p>WARNER BROS.</p>
+                    <p>AUGUST 26, 2020</p>
+                </div>
+            </div>
+
+            <div class="review">
+                <h3 class="review-main-title">Tenet Review</h3>
+                <div class="review-header2">
+                    <div class="hexagon-container">
+                        <div class="score-hexagon">10</div>
+                    </div>
+                    <div class="review-title">
+                        <h2>Amazing</h2>
+                        <div class="review-description">
+                            <p>Tenet is a bold, mind-bending thriller that redefines the boundaries of time and storytelling.</p>
+                        </div>
+                        <div class="author">
+                            <img src="assets/author-icon.jpg" alt="Author Icon" style="width: 24px; height: 24px; border-radius: 50%;">
+                            <span><a href="gabriele.html">Gabriele Bosoni</a></span>
+                        </div>
+                    </div>
+                    <div class="trailer-container">
+                        <iframe class="trailer" width="300" height="169" src="https://www.youtube.com/embed/LdOM0x0XDMo" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+
+            
+
+        </div>
+    </article>
+
+    <!-- Footer -->
+    <div class="footer">
+        <p>&copy; 2025 Gabriele's Movie Review. All rights reserved.</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

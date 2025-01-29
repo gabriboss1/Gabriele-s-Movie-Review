@@ -1,0 +1,1298 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global Styles */
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: #333;
+    background-color: #f1efef;
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+h1, h2, h3 {
+    font-weight: 600;
+}
+
+.title h1 {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+/* Header (Banner) */
+.banner {
+    background-color: #b71e1b; /* Bright red for branding */
+    color: #fff;
+    padding: 2rem 0;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+    font-weight: 700;
+    font-size: 2.5rem;
+}
+
+.banner h1 {
+    font-size: 2.2rem;
+    margin-left: 0;
+    margin-right: 0;
+    text-align: center;
+}
+
+/* Side Menu */
+.side-menu {
+    position: fixed;
+    top: 60px; /* Adjusted to ensure the menu doesn't hide under the banner */
+    left: -300px; /* Hidden by default */
+    width: 300px;
+    height: 100%;
+    background: white; /* Change this line */
+    color: #333; /* Adjust text color for better contrast */
+    padding-top: 3rem;
+    box-shadow: 4px 0 8px rgba(0, 0, 0, 0.2);
+    transition: all 0.5s ease;
+    z-index: 999;
+}
+
+.side-menu.open {
+    left: 0;
+}
+
+.side-menu .closebtn {
+    position: absolute;
+    top: 40px; /* Adjusted to be at the top */
+    right: 20px;
+    font-size: 36px;
+    text-decoration: none;
+    color: #333; /* Change this line to make the X visible */
+    z-index: 1000; /* Ensure the close button is above other elements */
+}
+
+.side-menu nav ul {
+    list-style: none;
+    padding-left: 1.5rem;
+}
+
+.side-menu nav ul li {
+    margin: 1.5rem 0;
+}
+
+.side-menu nav ul li a {
+    font-size: 1.2rem;
+    color: #333; /* Change this line */
+    transition: color 0.3s ease, background-color 0.3s ease; /* Add background-color transition */
+    padding: 0.5rem 1rem; /* Adjust padding */
+    display: block; /* Make the link a block element */
+    width: calc(100% - 2rem); /* Ensure the block spans the full width */
+    box-sizing: border-box; /* Include padding in the element's total width */
+}
+
+/* Add these styles for the hover effect */
+.side-menu nav ul li a:hover {
+    color: #b71e1bdd;
+    background-color: #f0f0f0; /* Light grey background */
+    border-radius: 4px; /* Rounded edges */
+    padding: 0.5rem 1rem; /* Add padding to ensure the box is visible */
+}
+
+/* Menu Icon */
+.menu-icon {
+    position: fixed;
+    top: 15px;
+    left: 15px;
+    font-size: 2rem;
+    color: #333;
+    cursor: pointer;
+    z-index: 1001;
+    transition: color 0.3s ease;
+}
+
+.menu-icon:hover {
+    color: #000000;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 4rem 2rem;
+    background: linear-gradient(to bottom, #ffffff, #f4f4f4);
+    margin-bottom: 2rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.hero h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    color: #666;
+}
+
+/* Review Section */
+.review-placeholder {
+    padding: 2rem;
+    margin: 0 auto;
+    width: 90%;
+    max-width: 1200px;
+    border-radius: 8px;
+}
+
+.review-placeholder h2 {
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.review-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: flex-start;
+    margin: 2rem auto;
+    overflow: visible;
+}
+
+.review-card {
+    background: linear-gradient(to top right, #ffffff, #f1f1f1);
+    border-radius: 12px;
+    padding: 2rem;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    width: 30%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.review-card:hover {
+    transform: scale(1.03);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.review-img-placeholder {
+    width: 100%;
+    height: 250px;
+    background-color: #ddd;
+    margin-bottom: 1rem;
+    border-radius: 8px;
+}
+
+.review-card h3 {
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+}
+
+.review-card p {
+    color: #666;
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    background: #333;
+    color: #fff;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+/* Buttons */
+button {
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: 8px;
+    background-color: #b71e1bdd;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background-color: #b71e1bdd;
+    transform: translateY(-2px);
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.fade-in {
+    animation: fadeIn 0.6s ease-in-out;
+}
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+    .review-card {
+        width: 45%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .review-card {
+        width: 100%;
+    }
+}
+
+.review-img {
+    width: 100%; /* Make the image fill the container */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px; /* Rounded corners */
+    margin-bottom: 1rem; /* Space between image and text */
+    object-fit: cover; /* Ensure the image covers the area without distortion */
+}
+
+/* Limit Image Size */
+.review-img-container img {
+    width: 100%;
+    max-width: 500px; /* Max width to standardize image size */
+    height: auto; /* Preserve aspect ratio */
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Hexagon PNG for Score */
+.score-hexagon {
+    width: 100px; /* Adjust size as needed */
+    height: 100px; /* Adjust size as needed */
+    background-image: url('assets/hexagon.png'); /* Replace with the path to your PNG file */
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
+}
+
+h1, h2, h3, p {
+    text-align: center;
+}
+
+
+
+/* Hexagon PNG for Score */
+.score-hexagon {
+    width: 120px; /* Larger size for the hexagon */
+    height: 120px; /* Match width */
+    background-image: url('assets/hexagon.png'); /* Replace with your hexagon PNG path */
+    background-size: contain; /* Maintain aspect ratio of the image */
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 2rem; /* Adjust text size */
+    font-weight: bold;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
+    margin-top: 20px;
+}
+
+
+/* Review Article */
+.review-article {
+    max-width: 100%;
+    padding-left: 25vw;
+    padding-right: 25vw;
+    overflow: visible;
+    /* margin: 3rem auto;
+    background-color: #fff;
+    border-radius: 12px;
+    padding: 3rem;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); */
+}
+
+.review-header {
+    display: flex center;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+
+.review-header h2 {
+    color: #333;
+    margin-bottom: 1rem;
+    text-align: left;
+}
+
+.review-header h1 {
+    font-size: 3.5rem; /* Adjust font size for the title */
+    font-weight: bold;
+    color: #191C25;
+    margin-bottom: 1rem;
+    text-align: left;
+}
+
+.review-header m {
+    font-size: 1.5rem; /* Adjust font size for the title */;
+    color: #252C37;
+    margin-bottom: 2rem;
+    text-align: left;
+}
+
+
+/* Movie Title */
+.movie-title {
+    font-size: 2.5rem; /* Adjust font size for the title */
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 2rem;
+    text-align: left;
+}
+
+/* Hexagon Container */
+.hexagon-container {
+    position: relative; /* Allows positioning the score over the hexagon */
+    display: inline-block; /* Ensure it doesn't take up the full width */
+    margin-top: 2rem; /* Space between article and hexagon */
+}
+
+/* Hexagon Image */
+.hexagon-rating {
+    width: 500px; /* Make the hexagon much larger */
+    height: 500px; /* Keep the height in sync with width */
+    display: block; /* Ensures image is inline */
+    margin: 0 auto; /* Center the hexagon */
+}
+
+/* Score on Hexagon */
+.score {
+    position: absolute;
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Adjust position to exactly center */
+    font-size: 10rem; /* Adjust the font size of the score */
+    color: #fff; /* White text for contrast */
+    font-weight: bold;
+    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.6); /* Optional: adds a shadow to the text */
+}
+
+.score-hexagon {
+    width: 120px;
+    height: 120px;
+    background: url('hexagon.svg') no-repeat center center;
+    background-size: cover;
+    display: inline-block;
+    line-height: 120px;
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+}
+
+/* Movie Image */
+.review-img-container {
+    max-width: 80%;
+    margin: 0 auto;
+    overflow: hidden;
+    margin-bottom: 2rem;
+}
+
+.article-img-container {
+    max-width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+    margin-bottom: 2rem;
+}
+
+.review-img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.article-img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    overflow: hidden;
+    /* box-shadow: 0 5px 10px rgba(2, 0, 0, 0.2); */
+}
+
+/* Review Content */
+.review-content {
+    color: #666;
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-top: 2rem;
+    overflow: hidden;
+    text-align: left;
+}
+
+.review-content p {
+    margin-bottom: 1.5rem;
+    font-size: medium;
+    color: #191C25;
+    overflow: hidden;
+    text-align: left;
+}
+
+.review-content h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #000000;
+    text-align: left;
+}
+
+.review-content h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #191C25;
+    text-align: left;
+    font-weight: 800;
+}
+
+.movie-link {
+    display: block;
+    text-align: left;
+    color: #b71e1b;
+    font-weight: 600; /* Use numeric value for font-weight */
+    margin-top: 2rem;
+    text-decoration: underline;
+    padding-bottom: 1rem;
+    font-size: 0.9rem;
+}
+
+.metadata-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1px solid #e0e0e0;
+    border-bottom: 1px solid #e0e0e0;
+    padding: 10px 0;
+    font-size: 14px;
+    color: #4b4e50;
+}
+
+.author {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: bold;
+    color: #4b4e50; 
+}
+
+.metadata {
+    display: flex;
+    gap: 16px;
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #4b4e50;
+}
+
+.author a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.author a:hover {
+    text-decoration: underline;
+}
+
+.review-content h1 {
+    color: #b71e1b;
+    font-size: 2.5rem;
+    text-align: left;
+    margin-bottom: 1rem;
+    margin-top: 3rem;
+    font-weight: 800;
+    line-height: 1.2; /* Adjust the line spacing as needed */
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background: #b71e1b; /* Change the color as needed */
+    margin-bottom: 2rem; /* Adjust the spacing as needed */
+}
+
+
+/* Image Gallery */
+.image-gallery {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Adjust the number of columns */
+    gap: 10px;
+    justify-content: center;
+    overflow: visible; /* Ensure images can grow beyond their container */
+    position: relative; /* Ensure z-index works */
+}
+
+/* Gallery Image */
+.gallery-img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+    position: relative; /* Ensure z-index works */
+    z-index: 1; /* Ensure images appear above other elements */
+}
+
+.gallery-img:hover {
+    filter: brightness(1.1); /* Slightly darken the image */
+    z-index: 10; /* Bring the hovered image to the front */
+}
+
+.img1 {
+    grid-column: span 4;
+    grid-row: span 2;
+}
+
+.img2 {
+    grid-column: span 1;
+    grid-row: span 1;
+}
+
+.img3 {
+    grid-column: span 1;
+    grid-row: span 1;
+}
+
+.img4 {
+    grid-column: span 1;
+    grid-row: span 1;
+}
+
+.img5 {
+    grid-column: span 1;
+    grid-row: span 1;
+}
+
+
+/* The Modal (background) */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.9);
+}
+
+/* Modal Content */
+.modal-content {
+    position: relative;
+    margin: auto;
+    padding: 0;
+    width: 80%;
+    max-width: 1200px;
+}
+
+/* The Close Button */
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.caption-container {
+    text-align: center;
+    background-color: black;
+    padding: 2px 16px;
+    color: white;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+/* Hide the images by default */
+.mySlides {
+    display: none;
+}
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+    .image-gallery {
+        grid-template-columns: repeat(2, 1fr); /* Adjust the number of columns for smaller screens */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .image-gallery {
+        grid-template-columns: 1fr; /* Single column layout for very small screens */
+    }
+}
+
+/* Styles for the new review section */
+.review {
+    background-color: #ffffff; /* White background */
+    border-radius: 12px; /* Rounded corners */
+    padding: 20px; /* Padding inside the box */
+    margin-top: 2rem; /* Space above the box */
+    text-align: left; /* Align text to the left */
+    max-width: 100%; /* Ensure it doesn't overflow */
+    border: 1px solid #e0e0e0; /* Light grey border */
+}
+
+.review .review-main-title {
+    font-size: 1.2rem !important; /* Adjust the size as needed and use !important to override other styles */
+    color: #252C37; /* Dark color */
+    font-weight: 800;
+    margin-bottom: 1rem; /* Space below the main title */
+    margin-left: 0.5rem;
+}
+
+.review-header2 {
+    display: flex;
+    align-items: center; /* Align items to the center */
+    gap: 10px; /* Reduce space between hexagon and title */
+}
+
+.score-hexagon {
+    width: 150px; /* Larger size for the hexagon */
+    height: 160px; /* Match width */
+    background-image: url('assets/hexagon.svg'); /* Replace with your hexagon PNG path */
+    background-size: cover; /* Ensure the image covers the entire hexagon */
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 5rem; /* Adjust text size */
+    font-weight: bold;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
+    margin: -25px 0 0 0; /* Move the hexagon higher up */
+    padding: 0; /* Remove any default padding */
+}
+
+.review-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center the text vertically */
+    margin-left: 10px; /* Reduce space between hexagon and title */
+    max-width: 300px; /* Less wide */
+}
+
+.review-title h2 {
+    color: #252C37; /* Red color for the title */
+    font-size: 1.5rem; /* Adjust size as needed */
+    font-weight: 800; /* Make the text bold */
+    margin: 0; /* Remove default margin */
+}
+
+.review-description {
+    margin-top: 0.5rem; /* Space above the description */
+}
+
+.review-description p {
+    font-size: 1rem; /* Adjust size as needed */
+    color: #252C37; /* Dark color for the description */
+    margin: 0; /* Remove default margin */
+}
+
+.review .author {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: bold;
+    color: #252C37;
+    margin-top: 0.5rem; /* Space above the author section */
+    font-size: 1rem;
+    padding-top: 0.5rem;
+}
+
+.review .author a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.review .author a:hover {
+    text-decoration: underline;
+}
+
+.trailer-container {
+    margin-left: auto; /* Push the trailer to the right */
+    display: flex;
+    align-items: center; /* Align trailer with the text and hexagon */
+}
+
+.trailer {
+    border-radius: 12px; /* Rounded borders for the trailer */
+    width: 400px; /* Increase the size of the trailer */
+    height: 225px; /* Maintain aspect ratio */
+}
+
+.in-this-article {
+    display: flex;
+    align-items: flex-start; /* Align items to the top */
+    gap: 20px; /* Space between image and text */
+    background-color: #f9f9f9; /* Light grey background */
+    border-radius: 12px; /* Rounded corners */
+    padding: 20px; /* Padding inside the box */
+    border: 1px solid #e0e0e0; /* Light grey border */
+    margin-top: 2rem; /* Space above the box */
+}
+
+.article-thumbnail {
+    width: 250px; /* Adjust size as needed */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 12px; /* Rounded corners */
+}
+
+.article-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Align text to the top */
+}
+
+.article-title a {
+    text-decoration: none; /* Remove underline from link */
+    color: #000000; /* Black color for the title */
+}
+
+.article-title a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+.article-title {
+    font-size: 1.5rem; /* Adjust size as needed */
+    color: #252C37; /* Black color for the title */
+    margin: 0; /* Remove default margin */
+    font-weight: 800;
+}
+
+.article-details p {
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    color: #4b4e50; 
+    font-size: 0.8rem;
+    line-height: 1; /* Ensure the lines are close together */
+    margin-bottom: 0.5rem; /* Remove any default margin */
+}
+
+.stat {
+    max-width: 100%;
+    padding-left: 25vw;
+    padding-right: 25vw;
+    overflow: visible;
+    color: #666;
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-top: 2rem;
+    overflow: hidden;
+    text-align: left;
+}
+
+.stat-info {
+    display: flex;
+    align-items: flex-start; /* Align items to the top */
+    gap: 20px; /* Space between image and text */
+    background-color: #f9f9f9; /* Light grey background */
+    border-radius: 12px; /* Rounded corners */
+    padding: 20px; /* Padding inside the box */
+    border: 1px solid #e0e0e0; /* Light grey border */
+    margin-top: 2rem; /* Space above the box */
+
+}
+
+.stat-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Align text to the top */
+}
+
+.stat-thumbnail {
+    width: 250px; /* Adjust size as needed */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 12px; /* Rounded corners */
+    margin-right: 1vw;
+}
+
+.stat-title {
+    text-align: left; /* Ensure the text is aligned to the left */
+}
+
+.stat-title a {
+    text-decoration: none; /* Remove underline from link */
+    color: #000000; /* Black color for the title */
+}
+
+.stat-title {
+    font-size: 2.5rem; /* Adjust size as needed */
+    color: #252C37; /* Black color for the title */
+    margin: 0; /* Remove default margin */
+    font-weight: 800;
+    margin-bottom: 2rem;
+    text-align: left;
+}
+
+.stat-details p {
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    color: #252C37; 
+    font-size: 0.8rem;
+    line-height: 1;
+    margin-bottom: 1rem;
+}
+
+.stat-details a {
+    font-size: 1.3rem;
+    margin-left: 0.4rem;
+    margin-right: 0.4rem;
+    align-items: top;
+}
+
+.stat-details div {
+    display: flex;
+    align-items: center; /* Align items to the center */
+    gap: 20px; /* Space between hexagon and text */
+    border-radius: 12px; /* Rounded corners */
+    border: 1px solid #e0e0e0; /* Light grey border */
+    background-color: #e0e0e0; /* Light grey background */
+    margin-top: 1rem;
+}
+
+.stat-hexagon {
+    align-content: bottom;
+    width: 7vw; /* Larger size for the hexagon */
+    height: 7.1vw; /* Match width */
+    background-image: url('assets/hexagon.svg'); /* Replace with your hexagon PNG path */
+    background-size: cover; /* Ensure the image covers the entire hexagon */
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom: 1rem;
+    margin-left: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative; 
+}
+
+.hexagon-text {
+    position: absolute; /* Position the text absolutely within the hexagon */
+    top: 50%; /* Center the text vertically */
+    left: 50%; /* Center the text horizontally */
+    transform: translate(-50%, -50%); /* Adjust the position to be exactly centered */
+    color: white; /* Text color */
+    font-size: 4rem; /* Adjust text size */
+    font-weight: bold; /* Make the text bold */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6); /* Add text shadow */
+}
+
+.stat-review {
+    background-color: #ffffff; /* White background */
+    border-radius: 12px; /* Rounded corners */
+    padding: 20px; /* Padding inside the box */
+    margin-top: 2rem; /* Space above the box */
+    text-align: left; /* Align text to the left */
+    max-width: 100%; /* Ensure it doesn't overflow */
+    border: 1px solid #e0e0e0; /* Light grey border */
+    margin-left: 25vw;
+    margin-right: 25vw;
+}
+
+.stat-rating p {
+    font-size: 2rem; /* Adjust size as needed */
+    color: #252C37; /* Dark color for the text */
+    font-weight: bold; /* Make the text bold */
+    margin-left: 2vw;
+}
+
+.stat-review-header {
+    display: flex;
+    align-items: center;
+    gap: 10px; 
+}
+
+.stat-review .stat-main-title {
+    font-size: 1.2rem !important; /* Adjust the size as needed and use !important to override other styles */
+    color: #252C37; /* Dark color */
+    font-weight: 800;
+    margin-bottom: 1rem; /* Space below the main title */
+    margin-left: 0.5rem;
+    text-align: left;
+}
+
+.stat-review-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center the text vertically */
+    margin-left: 10px; /* Reduce space between hexagon and title */
+    max-width: 300px; /* Less wide */
+}
+
+.stat-review-title h2 {
+    color: #252C37; /* Red color for the title */
+    font-size: 1.5rem; /* Adjust size as needed */
+    font-weight: 800; /* Make the text bold */
+    margin: 0; /* Remove default margin */
+    text-align: left;
+}
+
+.stat-review-description {
+    margin-top: 0.5rem; /* Space above the description */
+}
+
+.stat-review-description p {
+    font-size: 1rem; /* Adjust size as needed */
+    color: #252C37; /* Dark color for the description */
+    margin: 0; /* Remove default margin */
+    text-align: left;
+    margin-bottom: 1rem;
+}
+
+.review-button {
+    display: block;
+    text-align: center;
+    margin-top: 2rem;
+    margin-left: -7.5vw;
+}
+
+.button {
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: 8px;
+    background-color: #252C37;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.button:hover {
+    background-color: #43464b;
+}
+
+.screenshots {
+    background-color: #ffffff; /* White background */
+    border-radius: 12px; /* Rounded corners */
+    padding: 20px; /* Padding inside the box */
+    margin-top: 2rem; /* Space above the box */
+    text-align: left; /* Align text to the left */
+    max-width: 100%; /* Ensure it doesn't overflow */
+    border: 1px solid #e0e0e0; /* Light grey border */
+    margin-left: 25vw;
+    margin-right: 25vw;
+}
+
+.screenshots .screenshots-main-title {
+    font-size: 1.2rem !important; /* Adjust the size as needed and use !important to override other styles */
+    color: #252C37; /* Dark color */
+    font-weight: 800;
+    margin-bottom: 1rem; /* Space below the main title */
+    margin-left: 0.5rem;
+    text-align: left;
+}
+
+.screenshots-gallery {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Adjust the number of columns */
+    gap: 10px;
+    justify-content: center;
+    overflow: visible; /* Ensure images can grow beyond their container */
+    position: relative; /* Ensure z-index works */
+}
+
+.scr1 {
+    grid-column: span 2;
+    grid-row: span 2;
+}
+
+.scr2 {
+    grid-column: span 1;
+    grid-row: span 1;
+}
+
+.scr3 {
+    grid-column: span 1;
+    grid-row: span 1;
+}
+
+.scr4 {
+    grid-column: span 1;
+    grid-row: span 1;
+}
+
+.scr5 {
+    grid-column: span 1;
+    grid-row: span 1;
+}
+
+.summary {
+    background-color: #ffffff; /* White background */
+    border-radius: 12px; /* Rounded corners */
+    padding: 20px; /* Padding inside the box */
+    margin-top: 2rem; /* Space above the box */
+    text-align: left; /* Align text to the left */
+    max-width: 100%; /* Ensure it doesn't overflow */
+    border: 1px solid #e0e0e0; /* Light grey border */
+    margin-left: 25vw;
+    margin-right: 25vw;
+}
+
+.summary .summary-main-title {
+    font-size: 1.2rem !important; /* Adjust the size as needed and use !important to override other styles */
+    color: #252C37; /* Dark color */
+    font-weight: 800;
+    margin-bottom: 1rem; /* Space below the main title */
+    margin-left: 0.5rem;
+    text-align: left;
+}
+
+.summary p {
+    text-align: left;
+    margin-left: 0.5vw;
+    line-height: 1.4;
+}
+
+
+.banner-special {
+    background-color: #b71e1b; /* Bright red for branding */
+    color: #fff;
+    padding: 2rem 0;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 2.5rem;
+}
+
+.banner-special h1 {
+    font-size: 2.2rem;
+    margin-left: 0;
+    margin-right: 0;
+    text-align: center;
+}
+
+
+/* Container for the banner and profile details */
+.gabriele-banner-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+}
+
+/* Banner Section */
+.gabriele-banner {
+    width: 50vw; /* Leave 25vw space on left and right */
+    height: 20vw; /* Adjust banner height */
+    background-image: url('assets/banner-image.jpg'); /* Add banner image */
+    background-size: cover;
+    background-position: center;
+    position: relative; /* For positioning the name */
+    border-radius: 12px 12px 0px 0px; /* Rounded top corners */
+    margin-top: -1vw;
+}
+
+/* Name on the banner */
+.banner-content {
+    position: absolute;
+    bottom: 0.5vw; /* Positioned at the bottom of the banner */
+    left: 11vw;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5); /* Add text shadow for readability */
+}
+
+/* Bottom white section */
+.gabriele-details {
+    width: 50vw; /* Matches the banner width */
+    background-color: white;
+    border-radius: 0px 0px 12px 12px; /* Rounded bottom corners */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2vw;
+    position: relative;
+    height: 7vw;
+}
+
+/* Social Media Handles */
+.social-media {
+    font-size: 1.2rem;
+    color: #666;
+    margin-left: 9vw;
+    margin-top: -3vw;
+}
+
+/* Profile Picture */
+.gabriele-profile-picture {
+    width: 8vw; /* Profile picture size */
+    height: 8vw;
+    border-radius: 50%; /* Make it circular */
+    background-color: #ccc; /* Placeholder color */
+    background-image: url('assets/author-icon.jpg'); /* Add profile picture */
+    background-size: cover;
+    background-position: center;
+    border: 3px solid #ffffff; /* White border */
+    position: absolute;
+    left: 2vw; /* Aligned to the right */
+    margin-top: -5vw;
+}
+
+
+/* ########################################## */
+
+.author-content {
+    color: #666;
+    margin-top: 2rem;
+    overflow: hidden;
+    text-align: left;
+    /* margin-left: 25vw;
+    margin-right: 25vw; */
+}
+
+.auth {
+    padding-left: 25vw;
+    padding-right: 25vw;
+}
+
+
+.author-content h1 {
+    font-size: 2rem;
+    font-weight: 800;
+    color: #191C25;
+    margin-bottom: 2vw;
+    margin-top: 1vw;
+    text-align: left;
+}
+
+.article-review-header {
+    display: flex;
+    align-items: flex-start; /* Align items to the top */
+    gap: 20px; /* Adjust the gap between image and text */
+}
+
+.article-image {
+    width: 150px; /* Adjust based on your image size */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px; /* Optional: if you want rounded corners */
+}
+
+.article-image:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a shadow on hover */
+    filter: grayscale(30%); /* Make the image grey on hover */
+    cursor: pointer; /* Change cursor to a pointer on hover */
+}
+
+
+.article-review-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Align text to the top */
+}
+
+.article-review-title h2 {
+    color: #252C37;
+    font-size: 1.5rem;
+    font-weight: 800;
+    margin: 0;
+    text-align: left;
+}
+
+.article-review-title h2:hover {
+    text-decoration: underline;
+}
+
+.article-review-title p {
+    color: #666;
+    font-size: 1rem;
+    margin: 0;
+    text-align: left;
+    margin-top: 2vw; /* Space between title and date */
+    margin-bottom: 1vw;
+}
+
+.article-review-title a {
+    display: block;
+    text-align: left;
+    color: #b71e1b;
+    font-weight: 600; /* Use numeric value for font-weight */
+    margin-top: 0.5vw;
+    font-size: 0.9rem;
+}
+
+.divider {
+    border: 0;
+    height: 1px;
+    background: #ddd; /* Light gray color for the line */
+    margin-top: 1vw; /* Space above the line */
+    margin-bottom: 1vw; /* Space below the line */
+}
+
