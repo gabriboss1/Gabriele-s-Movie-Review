@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/svg" href="assets/hexagon.svg">
+    <title>Gabriele's Movie Review</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz@0,14..32;1,14..32&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="banner">
+        <a href="index.html" class="title"><h1>Gabriele's Movie Review</h1></a>
+        <span class="menu-icon" onclick="toggleMenu()">&#9776;</span>
+      </div>
+    
+      <div class="side-menu" id="side-menu">
+        <nav>
+          <ul>
+              <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+              <li><a href="leaderboard.html"><i class="fas fa-trophy"></i> Leaderboard</a></li>
+              <li><a href="about.html"><i class="fas fa-info-circle"></i> About</a></li>
+              <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
+          </ul>
+      </nav>
+    </div>   
+
+    <article class="review-article">
+        <a href="lotr-fellowship-stat.html" class="movie-link">LORD OF THE RINGS: THE FELLOWSHIP OF THE RING</a>
+        <header class="review-header">
+            <h1>Lord of the Rings: The Fellowship of the Ring Review</h1>
+            <m>A breathtaking introduction to Middle-earth’s greatest journey.</m>
+        </header>
+
+        <!-- Featured Image -->
+        <div class="article-img-container">
+            <img src="movies/fellowship/fellowship-image-2.jpg" alt="LOTR Fellowship Image" class="article-img">
+        </div>
+
+        <div class="metadata-container">
+            <div class="author">
+                <img src="assets/author-icon.jpg" alt="Author Icon" style="width: 24px; height: 24px; border-radius: 50%;">
+                <span>BY <a href="gabriele.html">GABRIELE BOSONI</a></span>
+            </div>
+            <div class="metadata">
+                <span>UPDATED: JAN 31, 2025 10:47 PM</span>
+                <span>POSTED: JAN 31, 2025 10:23 PM</span>
+            </div>
+        </div>
+        
+        <div class="review-content">
+            <section>
+                <p>Peter Jackson’s <em>The Lord of the Rings: The Fellowship of the Ring</em> is a cinematic triumph that redefined the fantasy genre. Released in 2001, this epic adaptation of J.R.R. Tolkien’s beloved novel transports audiences to Middle-earth, a world teeming with rich lore, breathtaking landscapes, and unforgettable characters. At its core, <em>The Fellowship of the Ring</em> is a story of courage, friendship, and the struggle between good and evil, all set against the backdrop of an immense and perilous journey.</p>
+
+                <p>From the peaceful hills of the Shire to the shadowed depths of Moria, the film captures the magic and grandeur of Tolkien’s vision with astonishing detail. Every frame is infused with a sense of wonder, making Middle-earth feel like a real, living place. But beyond its sweeping visuals and groundbreaking effects, <em>The Fellowship of the Ring</em> is a deeply human story—one that explores the weight of destiny, the cost of heroism, and the bonds that hold us together in the face of darkness. It’s not just a movie; it’s an experience that stays with you long after the journey begins.</p>
+            </section>
+            
+            <section>
+                <h2>The Fellowship Assembles</h2>
+                <p>The cast of <em>The Fellowship of the Ring</em> is nothing short of legendary, bringing Tolkien’s characters to life with stunning authenticity. Elijah Wood delivers a heartfelt and vulnerable performance as Frodo Baggins, a humble hobbit burdened with the fate of Middle-earth. His quiet strength and growing resolve make him an incredibly compelling protagonist, drawing audiences into his perilous quest.</p>
+
+                <p>But Frodo’s journey would be impossible without the companions by his side. Ian McKellen’s portrayal of Gandalf the Grey is nothing short of iconic, embodying the wisdom, warmth, and power of the beloved wizard. Viggo Mortensen’s Aragorn is both brooding and noble, capturing the internal struggle of a reluctant king. Sean Bean’s Boromir is tragic and deeply human, delivering one of the most powerful performances in the entire trilogy.</p>
+                
+                <p>Meanwhile, Orlando Bloom’s Legolas and John Rhys-Davies’ Gimli bring both skill and levity to the Fellowship, their growing camaraderie adding depth to the story. And of course, the rest of the hobbits—Sean Astin’s loyal and endearing Sam, Billy Boyd’s playful Pippin, and Dominic Monaghan’s mischievous Merry—infuse the film with heart and humor. Together, this ensemble creates one of the most memorable and beloved casts in cinematic history.</p>
+                <p></p>
+            </section>
+
+            <div class="image-gallery">
+                <img src="movies/fellowship/image8.jpg" alt="Screenshot 1" class="gallery-img img1" onclick="openModal();currentSlide(1)">
+                <img src="movies/fellowship/image4.jpg" alt="Screenshot 2" class="gallery-img img2" onclick="openModal();currentSlide(2)">
+                <img src="movies/fellowship/image2.jpg" alt="Screenshot 3" class="gallery-img img3" onclick="openModal();currentSlide(3)">
+                <img src="movies/fellowship/image6.jpg" alt="Screenshot 3" class="gallery-img img4" onclick="openModal();currentSlide(4)">
+                <img src="movies/fellowship/image7.jpg" alt="Screenshot 5" class="gallery-img img5" onclick="openModal();currentSlide(5)">
+            </div>
+            
+            <!-- The Modal/Lightbox -->
+            <div id="myModal" class="modal">
+                <span class="close cursor" onclick="closeModal()">&times;</span>
+                <div class="modal-content">
+            
+                    <div class="mySlides">
+                        <div class="numbertext">1 / 24</div>
+                        <img src="movies/fellowship/image8.jpg" style="width:100%">
+                    </div>
+            
+                    <div class="mySlides">
+                        <div class="numbertext">2 / 24</div>
+                        <img src="movies/fellowship/image4.jpg" style="width:100%">
+                    </div>
+            
+                    <div class="mySlides">
+                        <div class="numbertext">3 / 24</div>
+                        <img src="movies/fellowship/image2.jpg" style="width:100%">
+                    </div>
+            
+                    <div class="mySlides">
+                        <div class="numbertext">4 / 24</div>
+                        <img src="movies/fellowship/image6.jpg" style="width:100%">
+                    </div>
+            
+                    <div class="mySlides">
+                        <div class="numbertext">5 / 24</div>
+                        <img src="movies/fellowship/image7.jpg" style="width:100%">
+                    </div>
+
+                    <div class="mySlides">
+                        <div class="numbertext">6 / 24</div>
+                        <img src="movies/fellowship/image9.jpg" style="width:100%">
+                    </div>
+
+                    <div class="mySlides">
+                        <div class="numbertext">7 / 24</div>
+                        <img src="movies/fellowship/image10.jpg" style="width:100%">
+                    </div>
+
+                    <div class="mySlides">
+                        <div class="numbertext">8 / 24</div>
+                        <img src="movies/fellowship/image11.jpg" style="width:100%">
+                    </div>
+
+                    <div class="mySlides">
+                        <div class="numbertext">9 / 24</div>
+                        <img src="movies/fellowship/image12.jpg" style="width:100%">
+                    </div>
+
+                    <div class="mySlides">
+                        <div class="numbertext">10 / 24</div>
+                        <img src="movies/fellowship/image1.jpg" style="width:100%">
+                    </div>
+
+                    <div class="mySlides">
+                        <div class="numbertext">11 / 24</div>
+                        <img src="movies/fellowship/image3.jpg" style="width:100%">
+                    </div>
+
+                    <div class="mySlides">
+                        <div class="numbertext">12 / 24</div>
+                        <img src="movies/fellowship/image13.jpg" style="width:100%">
+                    </div>
+
+                    <div class="mySlides">
+                        <div class="numbertext">13 / 24</div>
+                        <img src="movies/fellowship/image14.jpg" style="width:100%">
+                    </div>
+
+                    <div class="mySlides">
+                        <div class="numbertext">14 / 24</div>
+                        <img src="movies/fellowship/image15.jpg" style="width:100%">
+                    </div>
+
+                    <div class="mySlides">
+                        <div class="numbertext">15 / 24</div>
+                        <img src="movies/fellowship/image16.jpg" style="width:100%">
+                    </div>
+
+                    <div class="mySlides">
+                        <div class="numbertext">16 / 24</div>
+                        <img src="movies/fellowship/image17.jpg" style="width:100%">
+                    </div>
+
+                    <div class="mySlides">
+                        <div class="numbertext">17 / 24</div>
+                        <img src="movies/fellowship/image18.jpg" style="width:100%">
+                    </div>
+
+                    <div class="mySlides">
+                        <div class="numbertext">18 / 24</div>
+                        <img src="movies/fellowship/image19.jpg" style="width:100%">
+                    </div>
+
+                    <div class="mySlides">
+                        <div class="numbertext">19 / 24</div>
+                        <img src="movies/fellowship/image20.jpg" style="width:100%">
+                    </div>
+
+                    <div class="mySlides">
+                        <div class="numbertext">20 / 24</div>
+                        <img src="movies/fellowship/image21.jpg" style="width:100%">
+                    </div>
+
+                    <div class="mySlides">
+                        <div class="numbertext">21 / 24</div>
+                        <img src="movies/fellowship/image22.jpg" style="width:100%">
+                    </div>
+
+                    <div class="mySlides">
+                        <div class="numbertext">22 / 24</div>
+                        <img src="movies/fellowship/image23.jpg" style="width:100%">
+                    </div>
+
+                    <div class="mySlides">
+                        <div class="numbertext">23 / 24</div>
+                        <img src="movies/fellowship/image24.jpg" style="width:100%">
+                    </div>
+
+                    <div class="mySlides">
+                        <div class="numbertext">24 / 24</div>
+                        <img src="movies/fellowship/image25.jpg" style="width:100%">
+                    </div>                
+                        
+                    <!-- Next/previous controls -->
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            
+                    <!-- Caption text -->
+                    <div class="caption-container">
+                        <p id="caption"></p>
+                    </div>
+                </div>
+            </div>     
+            
+            <p></p>
+            
+            <h1>I Could Wander These Lands Forever.</h1>
+            <hr>
+            
+            <section>
+                <p>
+                    More than just a film, <i>The Fellowship of the Ring</i> is an invitation to explore a world that feels boundless. Every mountain, every river, every whispered Elvish phrase adds to the illusion that Middle-earth exists beyond the confines of the screen. The film’s cinematography captures this vastness with breathtaking landscapes that feel untouched by time. Whether it is the tranquil beauty of Hobbiton or the shadowed, ancient halls of Moria, each setting is brought to life with an attention to detail that few films can match.
+                </p>
+                <p>
+                    But what truly elevates the film is Howard Shore’s iconic score, which weaves itself into the story as seamlessly as the landscapes and characters. The triumphant brass of "The Ring Goes South" mirrors the Fellowship’s resolve, while the mournful strings of "The Breaking of the Fellowship" encapsulate the weight of loss and duty. The Shire’s theme, light and playful at first, takes on new meaning as the journey unfolds, reminding us of all that is at stake. Just as the visual world-building makes Middle-earth feel real, Shore’s music makes it feel alive, evoking emotions that linger long after the credits roll.
+                </p>
+                <p>
+                    The film’s pacing allows the audience to truly soak in the world, never rushing through the quiet moments that make the story so powerful. Scenes like Gandalf’s last words before falling into shadow or Boromir’s desperate stand against the Uruk-hai hit harder because of the film’s ability to slow down and let these moments breathe. There is a richness in every frame, an authenticity that makes even the most fantastical elements feel grounded in something real.
+                </p>
+            </section>
+            
+            <h1>I will never forget the picture it painted.</h1>
+            <hr>
+
+            <section>
+                <p>
+                    Few films have ever captured the magic of their source material as perfectly as <i>The Fellowship of the Ring</i>. From the golden glow of Rivendell to the foreboding darkness of the Mines of Moria, every frame is a testament to the craftsmanship behind the film. The combination of practical effects, miniatures, and CGI set a new benchmark for visual storytelling, immersing audiences in a world that feels both grand and intimate.
+                </p>
+                <p>
+                    The use of forced perspective to create the illusion of hobbit size, the detailed miniatures used for towering locations like Isengard and Barad-dûr, and the breathtaking on-location shoots in New Zealand all contribute to the film’s timeless visual appeal. Even in an era dominated by CGI-heavy blockbusters, <i>Fellowship</i> remains a masterclass in how to blend practical and digital effects seamlessly. The film does not just show Middle-earth—it makes it feel tangible, a place you could step into if only you could find the right path.
+                </p>
+                <p>
+                    But what makes the film truly stand out is how its visuals are used to tell the story. The cinematography shifts to match the tone of each scene—warm and inviting in the Shire, ethereal and dreamlike in Rivendell, claustrophobic and tense in Moria. The lighting, the camera angles, even the way the characters are framed all serve to reinforce the emotions at play. When Frodo first lays eyes on the One Ring in Bag End, the subtle distortion of the camera hints at the power it holds before a single word is spoken. When Aragorn steps forward to fight the Uruk-hai, the way he is framed transforms him from a wandering ranger into the leader he is destined to become.
+                </p>
+                <p>
+                    The film’s achievements did not go unnoticed. At the 74th Academy Awards, it won four Oscars, including Best Cinematography, Best Makeup, Best Visual Effects, and Best Original Score, solidifying its status as a technical masterpiece. But beyond the accolades, what truly matters is the lasting impact of its imagery. Whether it is the sight of the Argonath standing tall over the Anduin, the last glimpse of Gandalf before he falls into darkness, or the lonely figure of Frodo at the film’s end, setting out alone with the weight of the world on his shoulders, these are images that remain etched in the minds of audiences forever.
+                </p>
+            </section>
+
+            <section>
+                <h2>Verdict</h2>
+                <p>
+                    <i>The Fellowship of the Ring</i> is not just the beginning of an adventure—it is the foundation of one of the greatest cinematic achievements of all time. With its masterful storytelling, unforgettable characters, and groundbreaking visuals, it stands as a testament to the power of filmmaking. It is a story of friendship, courage, and the battle between light and darkness, woven together with such care that it remains as captivating now as it was upon its release.
+                </p>
+                <p>
+                    Whether you watch it for its deep themes, its breathtaking visuals, or the sheer wonder of Middle-earth, it is a film that leaves a lasting impression. Even after all these years, it continues to inspire, transport, and remind us that there are still great stories left to tell.  
+                </p>
+            </section>
+
+            <p></p>
+
+            <h2>In This Article</h2>
+            
+            <!-- New Container After "In This Article" -->
+            <div class="in-this-article">
+                <a href="lotr-fellowship-stat.html">
+                    <img src="movies/fellowship/fellowship-image-2.jpg" alt="Article Image" class="article-image">
+                </a>
+                <div class="article-details">
+                    <h3 class="article-title"><a href="lotr-fellowship-stat.html">The Lord of the Rings: The Fellowship of the Ring</a></h3>
+                    <p>NEW LINE CINEMA</p>
+                    <p>DECEMBER 10, 2001</p>
+                </div>
+            </div>
+
+            <div class="review">
+                <h3 class="review-main-title">Lord of the Rings: The Fellowship of the Ring Review</h3>
+                <div class="review-header2">
+                    <div class="hexagon-container">
+                        <div class="score-hexagon">10</div>
+                    </div>
+                    <div class="review-title">
+                        <h2>Amazing</h2>
+                        <div class="review-description">
+                            <p>A breathtaking introduction to Middle-earth’s greatest journey.</p>
+                        </div>
+                        <div class="author">
+                            <img src="assets/author-icon.jpg" alt="Author Icon" style="width: 24px; height: 24px; border-radius: 50%;">
+                            <span><a href="gabriele.html">Gabriele Bosoni</a></span>
+                        </div>
+                    </div>
+                    <div class="trailer-container">
+                        <iframe class="trailer" width="300" height="169" src="https://www.youtube.com/embed/_nZdmwHrcnw" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+
+            
+
+        </div>
+    </article>
+
+    <!-- Footer -->
+    <div class="footer">
+        <p>&copy; 2025 Gabriele's Movie Review. All rights reserved.</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
