@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/svg" href="assets/hexagon.svg">
+    <title>Gabriele's Movie Review</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz@0,14..32;1,14..32&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="banner">
+        <a href="index.html" class="title"><h1>Gabriele's Movie Review</h1></a>
+        <span class="menu-icon" onclick="toggleMenu()">&#9776;</span>
+      </div>
+    
+      <div class="side-menu" id="side-menu">
+        <nav>
+          <ul>
+              <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+              <li><a href="leaderboard.html"><i class="fas fa-trophy"></i> Leaderboard</a></li>
+              <li><a href="about.html"><i class="fas fa-info-circle"></i> About</a></li>
+              <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
+          </ul>
+      </nav>
+    </div>   
+
+    <article class="review-article">
+        <a href="lotr-two-towers-stat.html" class="movie-link">LORD OF THE RINGS: THE TWO TOWERS</a>
+        <header class="review-header">
+            <h1>Lord of the Rings: The Two Towers Review</h1>
+            <m>The battle for Middle-earth begins in earnest.</m>
+        </header>
+
+        <!-- Featured Image -->
+        <div class="article-img-container">
+            <img src="movies/two-towers/two-towers-image-2.avif" alt="LOTR Two Towers Image" class="article-img">
+        </div>
+
+        <div class="metadata-container">
+            <div class="author">
+                <img src="assets/author-icon.jpg" alt="Author Icon" style="width: 24px; height: 24px; border-radius: 50%;">
+                <span>BY <a href="gabriele.html">GABRIELE BOSONI</a></span>
+            </div>
+            <div class="metadata">
+                <span>UPDATED: FEB 6, 2025 6:35 PM</span>
+                <span>POSTED: FEB 5, 2025 9:14 PM</span>
+            </div>
+        </div>
+        
+        <div class="review-content">
+            <section>
+                <p><em>The Lord of the Rings: The Two Towers</em> is where the story of Middle-earth expands in scope, shifting from an intimate quest into a sprawling, multi-threaded epic. Unlike its predecessor, which primarily followed the Fellowship as a single group, this chapter of the saga separates the characters across different landscapes, each facing their own trials. Frodo and Sam tread deeper into the perilous lands of Mordor, burdened by the weight of the One Ring and the growing influence of Gollum. Meanwhile, Aragorn, Legolas, and Gimli pursue the Uruk-hai to rescue Merry and Pippin, only to become entangled in the fate of Rohan, a kingdom on the brink of ruin.</p>
+
+                <p>Peter Jackson expertly balances these divergent storylines, ensuring each feels equally vital to the larger narrative. The film transitions seamlessly between the creeping dread of Frodo’s journey, the rising tension in Rohan, and Merry and Pippin’s unexpected alliance with the ancient Ents. This structure enhances the film’s momentum, creating a sense of urgency that builds toward an unforgettable climax. It’s here that <em>The Two Towers</em> truly distinguishes itself—not just as a bridge between two films, but as a riveting adventure in its own right.</p>
+                
+                <p>The darker tone of the story also allows for deeper character exploration. Frodo's slow unraveling under the Ring’s influence is palpable, as Elijah Wood delivers a haunting portrayal of a soul being consumed by power. Aragorn, too, faces his own internal conflict, torn between duty and destiny as he steps further into his role as a leader. Even side characters like Éowyn, Théoden, and Faramir bring new emotional layers to the story, making the world of Middle-earth feel even richer and more lived-in.</p>
+            </section>
+            
+            <section>
+                <h2>A Cast That Brings Middle-earth to Life</h2>
+                <p>The cast of <em>The Fellowship of the Ring</em> is nothing short of legendary, bringing Tolkien’s characters to life with stunning authenticity. Elijah Wood delivers a heartfelt and vulnerable performance as Frodo Baggins, a humble hobbit burdened with the fate of Middle-earth. His quiet strength and growing resolve make him an incredibly compelling protagonist, drawing audiences into his perilous quest.</p>
+
+                <p>But Frodo’s journey would be impossible without the companions by his side. Ian McKellen’s portrayal of Gandalf the Grey is nothing short of iconic, embodying the wisdom, warmth, and power of the beloved wizard. Viggo Mortensen’s Aragorn is both brooding and noble, capturing the internal struggle of a reluctant king. Sean Bean’s Boromir is tragic and deeply human, delivering one of the most powerful performances in the entire trilogy.</p>
+                
+                <p>Meanwhile, Orlando Bloom’s Legolas and John Rhys-Davies’ Gimli bring both skill and levity to the Fellowship, their growing camaraderie adding depth to the story. And of course, the rest of the hobbits—Sean Astin’s loyal and endearing Sam, Billy Boyd’s playful Pippin, and Dominic Monaghan’s mischievous Merry—infuse the film with heart and humor. Together, this ensemble creates one of the most memorable and beloved casts in cinematic history.</p>
+                <p></p>
+            </section>
+
+            <div class="image-gallery">
+                <img src="movies/two-towers/image1.jpg" alt="Screenshot 1" class="gallery-img img1" onclick="openModal();currentSlide(1)">
+                <img src="movies/two-towers/image31.jpg" alt="Screenshot 2" class="gallery-img img2" onclick="openModal();currentSlide(2)">
+                <img src="movies/two-towers/image2.jpg" alt="Screenshot 3" class="gallery-img img3" onclick="openModal();currentSlide(3)">
+                <img src="movies/two-towers/image3.jpg" alt="Screenshot 3" class="gallery-img img4" onclick="openModal();currentSlide(4)">
+                <img src="movies/two-towers/image4.jpg" alt="Screenshot 5" class="gallery-img img5" onclick="openModal();currentSlide(5)">
+            </div>
+            
+            <!-- The Modal/Lightbox -->
+            <div id="myModal" class="modal">
+                <span class="close cursor" onclick="closeModal()">&times;</span>
+                <div class="modal-content">
+            
+                    <div class="mySlides">
+                        <div class="numbertext">1 / 47</div>
+                        <img src="movies/two-towers/image1.jpg" style="width:100%">
+                    </div>
+            
+                    <div class="mySlides">
+                        <div class="numbertext">2 / 47</div>
+                        <img src="movies/two-towers/image31.jpg" style="width:100%">
+                    </div>
+            
+                    <div class="mySlides">
+                        <div class="numbertext">3 / 47</div>
+                        <img src="movies/two-towers/image2.jpg" style="width:100%">
+                    </div>
+            
+                    <div class="mySlides">
+                        <div class="numbertext">4 / 47</div>
+                        <img src="movies/two-towers/image3.jpg" style="width:100%">
+                    </div>
+            
+                    <div class="mySlides">
+                        <div class="numbertext">5 / 47</div>
+                        <img src="movies/two-towers/image4.jpg" style="width:100%">
+                    </div>
+
+                    <div class="mySlides">
+                        <div class="numbertext">6 / 47</div>
+                        <img src="movies/two-towers/image5.jpg" style="width:100%">
+                    </div>
+
+                    <div class="mySlides">
+                        <div class="numbertext">7 / 47</div>
+                        <img src="movies/two-towers/image6.jpg" style="width:100%">
+                    </div>
+
+                    <div class="mySlides">
+                        <div class="numbertext">8 / 47</div>
+                        <img src="movies/two-towers/image7.jpg" style="width:100%">
+                    </div>
+
+                    <div class="mySlides">
+                        <div class="numbertext">9 / 24</div>
+                        <img src="movies/two-towers/image8.jpg" style="width:100%">
+                    </div>
+
+                    <div class="mySlides">
+                        <div class="numbertext">10 / 47</div>
+                        <img src="movies/two-towers/image10.jpg" style="width:100%">
+                    </div>
+
+                    <div class="mySlides">
+                        <div class="numbertext">11 / 47</div>
+                        <img src="movies/two-towers/image11.jpg" style="width:100%">
+                    </div>
+
+                    <div class="mySlides">
+                        <div class="numbertext">12 / 47</div>
+                        <img src="movies/two-towers/image12.jpg" style="width:100%">
+                    </div>
+
+                    <div class="mySlides">
+                        <div class="numbertext">13 / 47</div>
+                        <img src="movies/two-towers/image13.jpg" style="width:100%">
+                    </div>
+
+                    <div class="mySlides">
+                        <div class="numbertext">14 / 47</div>
+                        <img src="movies/two-towers/image14.jpg" style="width:100%">
+                    </div>
+
+                    <div class="mySlides">
+                        <div class="numbertext">15 / 47</div>
+                        <img src="movies/two-towers/image15.jpg" style="width:100%">
+                    </div>
+
+                    <div class="mySlides">
+                        <div class="numbertext">16 / 47</div>
+                        <img src="movies/two-towers/image16.jpg" style="width:100%">
+                    </div>
+
+                    <div class="mySlides">
+                        <div class="numbertext">17 / 47</div>
+                        <img src="movies/two-towers/image17.jpg" style="width:100%">
+                    </div>
+
+                    <div class="mySlides">
+                        <div class="numbertext">18 / 47</div>
+                        <img src="movies/two-towers/image18.jpg" style="width:100%">
+                    </div>
+
+                    <div class="mySlides">
+                        <div class="numbertext">19 / 47</div>
+                        <img src="movies/two-towers/image19.jpg" style="width:100%">
+                    </div>
+
+                    <div class="mySlides">
+                        <div class="numbertext">20 / 47</div>
+                        <img src="movies/two-towers/image20.jpg" style="width:100%">
+                    </div>
+
+                    <div class="mySlides">
+                        <div class="numbertext">21 / 47</div>
+                        <img src="movies/two-towers/image21.jpg" style="width:100%">
+                    </div>
+
+                    <div class="mySlides">
+                        <div class="numbertext">22 / 47</div>
+                        <img src="movies/two-towers/image23.jpg" style="width:100%">
+                    </div>
+
+                    <div class="mySlides">
+                        <div class="numbertext">23 / 47</div>
+                        <img src="movies/two-towers/image24.jpg" style="width:100%">
+                    </div>
+
+                    <div class="mySlides">
+                        <div class="numbertext">24 / 47</div>
+                        <img src="movies/two-towers/image25.jpg" style="width:100%">
+                    </div>
+
+                    <div class="mySlides">
+                        <div class="numbertext">25 / 47</div>
+                        <img src="movies/two-towers/image26.jpg" style="width:100%">
+                    </div>
+
+                    <div class="mySlides">
+                        <div class="numbertext">26 / 47</div>
+                        <img src="movies/two-towers/image27.jpg" style="width:100%">
+                    </div>
+
+                    <div class="mySlides">
+                        <div class="numbertext">27 / 47</div>
+                        <img src="movies/two-towers/image28.jpg" style="width:100%">
+                    </div>
+
+                    <div class="mySlides">
+                        <div class="numbertext">28 / 47</div>
+                        <img src="movies/two-towers/image29.jpg" style="width:100%">
+                    </div>
+
+                    <div class="mySlides">
+                        <div class="numbertext">29 / 47</div>
+                        <img src="movies/two-towers/image30.jpg" style="width:100%">
+                    </div>
+
+                    <div class="mySlides">
+                        <div class="numbertext">30 / 47</div>
+                        <img src="movies/two-towers/image32.jpg" style="width:100%">
+                    </div>
+
+                    <div class="mySlides">
+                        <div class="numbertext">31 / 47</div>
+                        <img src="movies/two-towers/image33.jpg" style="width:100%">
+                    </div>
+
+                    <div class="mySlides">
+                        <div class="numbertext">32 / 47</div>
+                        <img src="movies/two-towers/image34.jpg" style="width:100%">
+                    </div>
+
+                    <div class="mySlides">
+                        <div class="numbertext">33 / 47</div>
+                        <img src="movies/two-towers/image35.jpg" style="width:100%">
+                    </div>
+
+                    <div class="mySlides">
+                        <div class="numbertext">34 / 47</div>
+                        <img src="movies/two-towers/image36.jpg" style="width:100%">
+                    </div>
+
+                    <div class="mySlides">
+                        <div class="numbertext">35 / 47</div>
+                        <img src="movies/two-towers/image37.jpg" style="width:100%">
+                    </div>
+
+                    <div class="mySlides">
+                        <div class="numbertext">36 / 47</div>
+                        <img src="movies/two-towers/image38.jpg" style="width:100%">
+                    </div>
+
+                    <div class="mySlides">
+                        <div class="numbertext">37 / 47</div>
+                        <img src="movies/two-towers/image39.jpg" style="width:100%">
+                    </div>
+
+                    <div class="mySlides">
+                        <div class="numbertext">38 / 47</div>
+                        <img src="movies/two-towers/image40.jpg" style="width:100%">
+                    </div>
+
+                    <div class="mySlides">
+                        <div class="numbertext">39 / 47</div>
+                        <img src="movies/two-towers/image41.jpg" style="width:100%">
+                    </div>
+
+                    <div class="mySlides">
+                        <div class="numbertext">40 / 47</div>
+                        <img src="movies/two-towers/image42.jpg" style="width:100%">
+                    </div>
+
+                    <div class="mySlides">
+                        <div class="numbertext">41 / 47</div>
+                        <img src="movies/two-towers/image43.jpg" style="width:100%">
+                    </div>
+
+                    <div class="mySlides">
+                        <div class="numbertext">42 / 47</div>
+                        <img src="movies/two-towers/image44.jpg" style="width:100%">
+                    </div>
+
+                    <div class="mySlides">
+                        <div class="numbertext">43 / 47</div>
+                        <img src="movies/two-towers/image45.jpg" style="width:100%">
+                    </div>
+
+                    <div class="mySlides">
+                        <div class="numbertext">44 / 47</div>
+                        <img src="movies/two-towers/image46.jpg" style="width:100%">
+                    </div>
+
+                    <div class="mySlides">
+                        <div class="numbertext">45 / 47</div>
+                        <img src="movies/two-towers/image47.jpg" style="width:100%">
+                    </div>
+
+                    <div class="mySlides">
+                        <div class="numbertext">46 / 47</div>
+                        <img src="movies/two-towers/image48.jpg" style="width:100%">
+                    </div>
+
+                    <div class="mySlides">
+                        <div class="numbertext">47 / 47</div>
+                        <img src="movies/two-towers/image49.jpg" style="width:100%">
+                    </div>
+
+                    
+                    <!-- Next/previous controls -->
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            
+                    <!-- Caption text -->
+                    <div class="caption-container">
+                        <p id="caption"></p>
+                    </div>
+                </div>
+            </div>     
+            
+            <p></p>
+            
+            <h1>The Journey Splinters, but the Story Soars.</h1>
+            <hr>
+            
+            <section>
+                <p><em>The Lord of the Rings: The Two Towers</em> is where the story of Middle-earth expands in scope, shifting from an intimate quest into a sprawling, multi-threaded epic. Unlike its predecessor, which primarily followed the Fellowship as a single group, this chapter of the saga separates the characters across different landscapes, each facing their own trials. Frodo and Sam tread deeper into the perilous lands of Mordor, burdened by the weight of the One Ring and the growing influence of Gollum. Meanwhile, Aragorn, Legolas, and Gimli pursue the Uruk-hai to rescue Merry and Pippin, only to become entangled in the fate of Rohan, a kingdom on the brink of ruin.</p>
+
+                <p>Peter Jackson expertly balances these divergent storylines, ensuring each feels equally vital to the larger narrative. The film transitions seamlessly between the creeping dread of Frodo’s journey, the rising tension in Rohan, and Merry and Pippin’s unexpected alliance with the ancient Ents. This structure enhances the film’s momentum, creating a sense of urgency that builds toward an unforgettable climax. It’s here that <em>The Two Towers</em> truly distinguishes itself—not just as a bridge between two films, but as a riveting adventure in its own right.</p>
+                
+                <p>The darker tone of the story also allows for deeper character exploration. Frodo's slow unraveling under the Ring’s influence is palpable, as Elijah Wood delivers a haunting portrayal of a soul being consumed by power. Aragorn, too, faces his own internal conflict, torn between duty and destiny as he steps further into his role as a leader. Even side characters like Éowyn, Théoden, and Faramir bring new emotional layers to the story, making the world of Middle-earth feel even richer and more lived-in.</p>
+                
+                <p>The film’s success was reflected in its reception at the Academy Awards, where it won Best Visual Effects and Best Sound Editing while securing a nomination for Best Picture. While it didn’t take home the top prize, its recognition by the Academy signified a turning point for fantasy films, proving that they could be taken seriously as cinematic achievements. The groundbreaking work on Gollum alone was enough to cement the film’s place in history, setting a new standard for motion capture and digital effects.</p>
+            </section>
+            
+            <h1>I Could March to Helm’s Deep a Thousand Times.</h1>
+            <hr>
+
+            <section>
+                <p>If <em>The Fellowship of the Ring</em> was about assembling the pieces, <em>The Two Towers</em> is about seeing them collide. Nowhere is this more evident than in the Battle of Helm’s Deep, one of the most masterfully executed battle sequences in cinematic history. What makes it so effective is not just its scale, but the way Jackson builds tension long before the first arrow is loosed. The rain, the pounding of war drums, the fear in the eyes of the soldiers—it all culminates in an eruption of violence that is both spectacular and deeply personal.</p>
+
+                <p>Unlike many large-scale battles in film, Helm’s Deep never loses sight of the individuals fighting within it. Aragorn and Legolas exchange moments of camaraderie in the heat of battle, Gimli provides brief but welcome levity, and Théoden, burdened by years of despair, finds his resolve in the fight for his people’s survival. Even the smallest details, from the trembling hands of young soldiers to the raw brutality of the Uruk-hai, make it feel visceral and real.</p>
+                
+                <p>Howard Shore’s score further elevates the battle, with pounding war horns and swelling orchestral movements that amplify the stakes. The moment Gandalf arrives at dawn with the Riders of Rohan, Shore’s triumphant music surges in perfect harmony with the on-screen action, delivering a cinematic payoff that is nothing short of breathtaking. It’s a scene that embodies everything great about Jackson’s adaptation—grand spectacle, emotional weight, and an unwavering respect for Tolkien’s world.</p>
+            </section>
+
+            <h1>I Didn’t Think Gollum Would Be This Good.</h1>
+            <hr>
+
+            <section>
+                <p>Among the many triumphs of <em>The Two Towers</em>, perhaps the most unexpected was the groundbreaking portrayal of Gollum. More than just an impressive technical achievement, Gollum is a fully realized character with depth, complexity, and an unsettling unpredictability that makes every scene he’s in mesmerizing. Andy Serkis delivers a performance that is equal parts tragic and terrifying, bringing to life one of the most iconic figures in fantasy literature.</p>
+
+                <p>Gollum is no mere villain—he is a fractured soul, tormented by the power of the Ring and locked in an eternal battle with himself. The film’s depiction of this duality, particularly in the famous “Smeagol vs. Gollum” scene, is a masterclass in character work. As his two personalities wrestle for control, we see flickers of the creature he once was, making his ultimate descent back into treachery all the more heartbreaking.</p>
+                
+                <p>Visually, Gollum remains one of the greatest CGI creations in film history. Even decades later, his expressions, movements, and mannerisms feel incredibly lifelike, a testament to the groundbreaking motion-capture work of Serkis and Weta Digital. But beyond the technical marvel, it’s the writing and performance that make him so compelling. His twisted sense of loyalty to Frodo, his simmering hatred for Sam, and his unrelenting obsession with the Ring make him one of the most fascinating and tragic figures in the entire trilogy.</p>
+            </section>
+
+            <section>
+                <h2>Verdict</h2>
+                <p><em>The Lord of the Rings: The Two Towers</em> is not just a middle chapter—it’s an essential piece of one of the greatest cinematic trilogies of all time. With its breathtaking battle sequences, deeper character exploration, and groundbreaking effects, it stands as a remarkable achievement in its own right. The film expands the world of Middle-earth while maintaining the heart and soul of Tolkien’s story, ensuring that every storyline feels meaningful and compelling.</p>
+
+                <p>Though it may not have the same sense of discovery as <em>The Fellowship of the Ring</em> or the grand finale of <em>The Return of the King</em>, <em>The Two Towers</em> offers some of the trilogy’s most unforgettable moments. Whether it’s the thunderous clash at Helm’s Deep, the psychological depth of Gollum, or the rising tension as the war for Middle-earth looms closer, this film proves that a sequel can be just as powerful as its predecessor.</p>
+                
+                <p>More than two decades later, <em>The Two Towers</em> remains a stunning testament to Peter Jackson’s vision and Tolkien’s legacy. It’s a film that demands to be revisited, studied, and celebrated—a true masterpiece of fantasy cinema.</p>
+            </section>
+
+            <p></p>
+
+            <h2>In This Article</h2>
+            
+            <!-- New Container After "In This Article" -->
+            <div class="in-this-article">
+                <a href="lotr-two-towers-stat.html">
+                    <img src="movies/two-towers/two-towers-image-2.avif" alt="Article Image" class="article-image">
+                </a>
+                <div class="article-details">
+                    <h3 class="article-title"><a href="lotr-two-towers-stat.html">The Lord of the Rings: The Two Towers</a></h3>
+                    <p>NEW LINE CINEMA</p>
+                    <p>DECEMBER 5, 2002</p>
+                </div>
+            </div>
+
+            <div class="review">
+                <h3 class="review-main-title">Lord of the Rings: The Two Towers Review</h3>
+                <div class="review-header2">
+                    <div class="hexagon-container">
+                        <div class="score-hexagon">10</div>
+                    </div>
+                    <div class="review-title">
+                        <h2>Amazing</h2>
+                        <div class="review-description">
+                            <p>The battle for Middle-earth begins in earnest.</p>
+                        </div>
+                        <div class="author">
+                            <img src="assets/author-icon.jpg" alt="Author Icon" style="width: 24px; height: 24px; border-radius: 50%;">
+                            <span><a href="gabriele.html">Gabriele Bosoni</a></span>
+                        </div>
+                    </div>
+                    <div class="trailer-container">
+                        <iframe class="trailer" width="300" height="169" src="https://www.youtube.com/embed/nuTU5XcZTLA" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+
+            
+
+        </div>
+    </article>
+
+    <!-- Footer -->
+    <div class="footer">
+        <p>&copy; 2025 Gabriele's Movie Review. All rights reserved.</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

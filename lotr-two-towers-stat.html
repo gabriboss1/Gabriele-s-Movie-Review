@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/svg" href="assets/hexagon.svg">
+    <title>Gabriele's Movie Review</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz@0,14..32;1,14..32&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="banner">
+        <a href="index.html" class="title"><h1>Gabriele's Movie Review</h1></a>
+        <span class="menu-icon" onclick="toggleMenu()">&#9776;</span>
+      </div>
+    
+      <div class="side-menu" id="side-menu">
+        <nav>
+          <ul>
+              <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+              <li><a href="leaderboard.html"><i class="fas fa-trophy"></i> Leaderboard</a></li>
+              <li><a href="about.html"><i class="fas fa-info-circle"></i> About</a></li>
+              <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
+          </ul>
+      </nav>
+    </div>   
+    
+    <div class="stat">
+        <div class="stat-info">
+            <img src="movies/two-towers/two-towers.jpg" alt="Two Towers" class="stat-thumbnail">
+            <div class="stat-details">
+                <h3 class="stat-title">The Lord of the Rings: The Two Towers</h3>
+                <p>NEW LINE CINEMA <a> • </a>  DECEMBER 5, 2002</p>
+                <p>FANTASY/ADVENTURE <a> • </a> 2H59 / 3H55</p>
+                <div>
+                    <div class="stat-hexagon">
+                        <span class="hexagon-text">10</span>
+                    </div>
+                    <div class="stat-rating">
+                        <p>Amazing</p>
+                    </div>                
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="screenshots">
+        <h3 class="screenshots-main-title">Images</h3>
+        <div class="screenshots-gallery">
+            <img src="movies/two-towers/image1.jpg" alt="Screenshot 1" class="gallery-img scr1" onclick="openModal();currentSlide(1)">
+            <img src="movies/two-towers/image31.jpg" alt="Screenshot 2" class="gallery-img scr2" onclick="openModal();currentSlide(2)">
+            <img src="movies/two-towers/image2.jpg" alt="Screenshot 3" class="gallery-img scr3" onclick="openModal();currentSlide(3)">
+            <img src="movies/two-towers/image3.jpg" alt="Screenshot 3" class="gallery-img scr4" onclick="openModal();currentSlide(4)">
+            <img src="movies/two-towers/image4.jpg" alt="Screenshot 5" class="gallery-img scr5" onclick="openModal();currentSlide(5)">
+        </div>
+        
+        <div id="myModal" class="modal">
+            <span class="close cursor" onclick="closeModal()">&times;</span>
+            <div class="modal-content">
+        
+                <div class="mySlides">
+                    <div class="numbertext">1 / 47</div>
+                    <img src="movies/two-towers/image1.jpg" style="width:100%">
+                </div>
+        
+                <div class="mySlides">
+                    <div class="numbertext">2 / 47</div>
+                    <img src="movies/two-towers/image31.jpg" style="width:100%">
+                </div>
+        
+                <div class="mySlides">
+                    <div class="numbertext">3 / 47</div>
+                    <img src="movies/two-towers/image2.jpg" style="width:100%">
+                </div>
+        
+                <div class="mySlides">
+                    <div class="numbertext">4 / 47</div>
+                    <img src="movies/two-towers/image3.jpg" style="width:100%">
+                </div>
+        
+                <div class="mySlides">
+                    <div class="numbertext">5 / 47</div>
+                    <img src="movies/two-towers/image4.jpg" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">6 / 47</div>
+                    <img src="movies/two-towers/image5.jpg" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">7 / 47</div>
+                    <img src="movies/two-towers/image6.jpg" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">8 / 47</div>
+                    <img src="movies/two-towers/image7.jpg" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">9 / 24</div>
+                    <img src="movies/two-towers/image8.jpg" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">10 / 47</div>
+                    <img src="movies/two-towers/image10.jpg" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">11 / 47</div>
+                    <img src="movies/two-towers/image11.jpg" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">12 / 47</div>
+                    <img src="movies/two-towers/image12.jpg" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">13 / 47</div>
+                    <img src="movies/two-towers/image13.jpg" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">14 / 47</div>
+                    <img src="movies/two-towers/image14.jpg" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">15 / 47</div>
+                    <img src="movies/two-towers/image15.jpg" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">16 / 47</div>
+                    <img src="movies/two-towers/image16.jpg" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">17 / 47</div>
+                    <img src="movies/two-towers/image17.jpg" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">18 / 47</div>
+                    <img src="movies/two-towers/image18.jpg" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">19 / 47</div>
+                    <img src="movies/two-towers/image19.jpg" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">20 / 47</div>
+                    <img src="movies/two-towers/image20.jpg" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">21 / 47</div>
+                    <img src="movies/two-towers/image21.jpg" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">22 / 47</div>
+                    <img src="movies/two-towers/image23.jpg" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">23 / 47</div>
+                    <img src="movies/two-towers/image24.jpg" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">24 / 47</div>
+                    <img src="movies/two-towers/image25.jpg" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">25 / 47</div>
+                    <img src="movies/two-towers/image26.jpg" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">26 / 47</div>
+                    <img src="movies/two-towers/image27.jpg" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">27 / 47</div>
+                    <img src="movies/two-towers/image28.jpg" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">28 / 47</div>
+                    <img src="movies/two-towers/image29.jpg" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">29 / 47</div>
+                    <img src="movies/two-towers/image30.jpg" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">30 / 47</div>
+                    <img src="movies/two-towers/image32.jpg" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">31 / 47</div>
+                    <img src="movies/two-towers/image33.jpg" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">32 / 47</div>
+                    <img src="movies/two-towers/image34.jpg" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">33 / 47</div>
+                    <img src="movies/two-towers/image35.jpg" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">34 / 47</div>
+                    <img src="movies/two-towers/image36.jpg" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">35 / 47</div>
+                    <img src="movies/two-towers/image37.jpg" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">36 / 47</div>
+                    <img src="movies/two-towers/image38.jpg" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">37 / 47</div>
+                    <img src="movies/two-towers/image39.jpg" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">38 / 47</div>
+                    <img src="movies/two-towers/image40.jpg" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">39 / 47</div>
+                    <img src="movies/two-towers/image41.jpg" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">40 / 47</div>
+                    <img src="movies/two-towers/image42.jpg" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">41 / 47</div>
+                    <img src="movies/two-towers/image43.jpg" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">42 / 47</div>
+                    <img src="movies/two-towers/image44.jpg" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">43 / 47</div>
+                    <img src="movies/two-towers/image45.jpg" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">44 / 47</div>
+                    <img src="movies/two-towers/image46.jpg" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">45 / 47</div>
+                    <img src="movies/two-towers/image47.jpg" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">46 / 47</div>
+                    <img src="movies/two-towers/image48.jpg" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">47 / 47</div>
+                    <img src="movies/two-towers/image49.jpg" style="width:100%">
+                </div>
+
+                
+                <!-- Next/previous controls -->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        
+                <!-- Caption text -->
+                <div class="caption-container">
+                    <p id="caption"></p>
+                </div>
+            </div>
+        </div>     
+</div>
+
+    <div class="stat-review">
+        <h3 class="stat-main-title">The Lord of the Rings: The Two Towers Review</h3>
+        <div class="stat-review-header">
+            <div class="hexagon-container">
+                <div class="score-hexagon">10</div>
+            </div>
+            <div class="stat-review-title">
+                <h2>Amazing</h2>
+                <div class="stat-review-description">
+                    <p>The battle for Middle-earth begins in earnest.</p>
+                </div>
+                <div class="author">
+                    <img src="assets/author-icon.jpg" alt="Author Icon" style="width: 24px; height: 24px; border-radius: 50%;">
+                    <span><a href="gabriele.html">Gabriele Bosoni</a></span>
+                </div>
+                <div class="review-button">
+                    <a href="lotr-two-towers.html" class="button">Read Review</a>
+                </div>
+            </div>
+            <div class="trailer-container">
+                <iframe class="trailer" width="300" height="169" src="https://www.youtube.com/embed/nuTU5XcZTLA" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+
+    <div class="summary">
+        <h3 class="summary-main-title">Summary</h3>
+        <p><em>The Lord of the Rings: The Two Towers</em> is the thrilling second installment in Peter Jackson’s adaptation of J.R.R. Tolkien’s epic saga. As the Fellowship is scattered across Middle-earth, Frodo (Elijah Wood) and Sam (Sean Astin) struggle onward to Mount Doom, guided by the treacherous Gollum (Andy Serkis). Meanwhile, Aragorn (Viggo Mortensen), Legolas (Orlando Bloom), and Gimli (John Rhys-Davies) aid the people of Rohan against Saruman’s advancing Uruk-hai army, culminating in the legendary Battle of Helm’s Deep. Elsewhere, Merry (Dominic Monaghan) and Pippin (Billy Boyd) rally the ancient Ents to wage war on Isengard. With groundbreaking visual effects, breathtaking battles, and deeply emotional storytelling, <em>The Two Towers</em> expands the scope of Middle-earth, delving into themes of hope, perseverance, and the growing shadow of war, cementing itself as one of the greatest fantasy films of all time.</p>
+    </div>
+
+
+    <div class="footer">
+        <p>&copy; 2025 Gabriele's Movie Review. All rights reserved.</p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

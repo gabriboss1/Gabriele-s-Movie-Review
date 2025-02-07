@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/svg" href="assets/hexagon.svg">
+    <title>Gabriele's Movie Review</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz@0,14..32;1,14..32&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="banner">
+        <a href="index.html" class="title"><h1>Gabriele's Movie Review</h1></a>
+        <span class="menu-icon" onclick="toggleMenu()">&#9776;</span>
+      </div>
+    
+      <div class="side-menu" id="side-menu">
+        <nav>
+          <ul>
+              <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+              <li><a href="leaderboard.html"><i class="fas fa-trophy"></i> Leaderboard</a></li>
+              <li><a href="about.html"><i class="fas fa-info-circle"></i> About</a></li>
+              <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
+          </ul>
+      </nav>
+    </div>   
+
+    <article class="review-article">
+        <a href="lotr-fellowship-stat.html" class="movie-link">LORD OF THE RINGS: THE RETURN OF THE KING</a>
+        <header class="review-header">
+            <h1>Lord of the Rings: The Return of the King Review</h1>
+            <m>A Triumphant Finale Worthy of Legend.</m>
+        </header>
+
+        <!-- Featured Image -->
+        <div class="article-img-container">
+            <img src="movies/return-king/return-king-image.jpeg" alt="LOTR Return King Image" class="article-img">
+        </div>
+
+        <div class="metadata-container">
+            <div class="author">
+                <img src="assets/author-icon.jpg" alt="Author Icon" style="width: 24px; height: 24px; border-radius: 50%;">
+                <span>BY <a href="gabriele.html">GABRIELE BOSONI</a></span>
+            </div>
+            <div class="metadata">
+                <span>POSTED: FEB 7, 2025 9:53 PM</span>
+            </div>
+        </div>
+        
+        <div class="review-content">
+            <section>
+                <p><em>The Lord of the Rings: The Return of the King</em> is more than just the final chapter of a beloved trilogy—it is a cinematic event that redefined the fantasy genre. Directed by Peter Jackson and based on J.R.R. Tolkien’s legendary work, the film brings the epic struggle for Middle-earth to its climactic resolution. With Sauron’s forces tightening their grip and the fate of the world hanging by a thread, the film follows multiple storylines converging on a final battle between good and evil.</p>  
+
+                <p>Frodo Baggins (Elijah Wood) and Samwise Gamgee (Sean Astin) continue their treacherous journey to Mount Doom, facing the ever-growing temptation of the One Ring and the deceitful presence of Gollum (Andy Serkis). Meanwhile, Aragorn (Viggo Mortensen) steps into his destiny as the rightful king of Gondor, leading the last stand against Sauron’s overwhelming army. As war erupts across Middle-earth, friendships are tested, sacrifices are made, and the journey that began in the peaceful Shire reaches its defining moment. With breathtaking visuals, masterful storytelling, and an emotional weight that lingers long after the credits roll, <em>The Return of the King</em> is a testament to the power of epic filmmaking.</p>  
+            </section>
+            
+            <section>
+                <h2>The Fellowship’s Final Stand</h2>
+                <p>As the war for Middle-earth reaches its peak, the cast of <em>The Return of the King</em> delivers some of the most powerful performances in fantasy cinema. Elijah Wood’s portrayal of Frodo captures the toll of carrying the One Ring, his physical and emotional exhaustion laid bare in every scene. By his side, Sean Astin’s Samwise Gamgee emerges as the true heart of the story, demonstrating unwavering loyalty and courage as he carries both Frodo and their mission forward.</p>  
+
+                <p>Viggo Mortensen’s Aragorn embraces his destiny, rallying the free peoples of Middle-earth for a final stand against Sauron. His transformation from an exiled ranger to a noble king is one of the film’s most satisfying arcs, culminating in an unforgettable speech before the Black Gate. Meanwhile, Ian McKellen’s Gandalf remains a pillar of wisdom and strength, guiding Gondor’s defenses and confronting the nightmarish forces of Mordor.</p>  
+                
+                <p>Beyond the main trio, the supporting cast shines in their own defining moments. Miranda Otto’s Éowyn delivers a legendary battle scene, proving that courage knows no bounds. Orlando Bloom’s Legolas and John Rhys-Davies’ Gimli maintain their dynamic chemistry, balancing humor and heroism. But one of the most remarkable performances belongs to Andy Serkis as Gollum, whose final descent into obsession provides one of the most chilling moments in the film. Every actor brings their character’s journey to a fitting conclusion, ensuring that the film’s emotional stakes are just as gripping as its large-scale battles.</p>  
+                <p></p>
+            </section>
+
+            <div class="image-gallery">
+                <img src="movies/return-king/image55.jpg" alt="Screenshot 1" class="gallery-img img1" onclick="openModal();currentSlide(1)">
+                <img src="movies/return-king/image47.jpg" alt="Screenshot 2" class="gallery-img img2" onclick="openModal();currentSlide(2)">
+                <img src="movies/return-king/image6.jpg" alt="Screenshot 3" class="gallery-img img3" onclick="openModal();currentSlide(3)">
+                <img src="movies/return-king/image13.jpg" alt="Screenshot 3" class="gallery-img img4" onclick="openModal();currentSlide(4)">
+                <img src="movies/return-king/image32.jpg" alt="Screenshot 5" class="gallery-img img5" onclick="openModal();currentSlide(5)">
+            </div>
+            
+            <!-- The Modal/Lightbox -->
+            <div id="myModal" class="modal">
+                <span class="close cursor" onclick="closeModal()">&times;</span>
+                <div class="modal-content">
+            
+                    <div class="mySlides">
+                        <div class="numbertext">1 / 58</div>
+                        <img src="movies/return-king/image55.jpg" style="width:100%">
+                    </div>
+                    
+                    <div class="mySlides">
+                        <div class="numbertext">2 / 58</div>
+                        <img src="movies/return-king/image47.jpg" style="width:100%">
+                    </div>
+                    
+                    <div class="mySlides">
+                        <div class="numbertext">3 / 58</div>
+                        <img src="movies/return-king/image6.jpg" style="width:100%">
+                    </div>
+                    
+                    <div class="mySlides">
+                        <div class="numbertext">4 / 58</div>
+                        <img src="movies/return-king/image13.jpg" style="width:100%">
+                    </div>
+                    
+                    <div class="mySlides">
+                        <div class="numbertext">5 / 58</div>
+                        <img src="movies/return-king/image32.jpg" style="width:100%">
+                    </div>
+                    
+                    <div class="mySlides">
+                        <div class="numbertext">6 / 58</div>
+                        <img src="movies/return-king/image1.jpg" style="width:100%">
+                    </div>
+                    
+                    <div class="mySlides">
+                        <div class="numbertext">7 / 58</div>
+                        <img src="movies/return-king/image2.jpg" style="width:100%">
+                    </div>
+                    
+                    <div class="mySlides">
+                        <div class="numbertext">8 / 58</div>
+                        <img src="movies/return-king/image3.jpg" style="width:100%">
+                    </div>
+                    
+                    <div class="mySlides">
+                        <div class="numbertext">9 / 58</div>
+                        <img src="movies/return-king/image4.jpg" style="width:100%">
+                    </div>
+                    
+                    <div class="mySlides">
+                        <div class="numbertext">10 / 58</div>
+                        <img src="movies/return-king/image5.jpg" style="width:100%">
+                    </div>
+                    
+                    <div class="mySlides">
+                        <div class="numbertext">11 / 58</div>
+                        <img src="movies/return-king/image7.jpg" style="width:100%">
+                    </div>
+                    
+                    <div class="mySlides">
+                        <div class="numbertext">12 / 58</div>
+                        <img src="movies/return-king/image8.jpg" style="width:100%">
+                    </div>
+                    
+                    <div class="mySlides">
+                        <div class="numbertext">13 / 58</div>
+                        <img src="movies/return-king/image9.jpg" style="width:100%">
+                    </div>
+                    
+                    <div class="mySlides">
+                        <div class="numbertext">14 / 58</div>
+                        <img src="movies/return-king/image10.jpg" style="width:100%">
+                    </div>
+                    
+                    <div class="mySlides">
+                        <div class="numbertext">15 / 58</div>
+                        <img src="movies/return-king/image11.jpg" style="width:100%">
+                    </div>
+                    
+                    <div class="mySlides">
+                        <div class="numbertext">16 / 58</div>
+                        <img src="movies/return-king/image12.jpg" style="width:100%">
+                    </div>
+                    
+                    <div class="mySlides">
+                        <div class="numbertext">17 / 58</div>
+                        <img src="movies/return-king/image14.jpg" style="width:100%">
+                    </div>
+                    
+                    <div class="mySlides">
+                        <div class="numbertext">18 / 58</div>
+                        <img src="movies/return-king/image15.jpg" style="width:100%">
+                    </div>
+                    
+                    <div class="mySlides">
+                        <div class="numbertext">19 / 58</div>
+                        <img src="movies/return-king/image16.jpg" style="width:100%">
+                    </div>
+                    
+                    <div class="mySlides">
+                        <div class="numbertext">20 / 58</div>
+                        <img src="movies/return-king/image17.jpg" style="width:100%">
+                    </div>
+                    
+                    <div class="mySlides">
+                        <div class="numbertext">21 / 58</div>
+                        <img src="movies/return-king/image18.jpg" style="width:100%">
+                    </div>
+                    
+                    <div class="mySlides">
+                        <div class="numbertext">22 / 58</div>
+                        <img src="movies/return-king/image19.jpg" style="width:100%">
+                    </div>
+                    
+                    <div class="mySlides">
+                        <div class="numbertext">23 / 58</div>
+                        <img src="movies/return-king/image20.jpg" style="width:100%">
+                    </div>
+                    
+                    <div class="mySlides">
+                        <div class="numbertext">24 / 58</div>
+                        <img src="movies/return-king/image21.jpg" style="width:100%">
+                    </div>
+                    
+                    <div class="mySlides">
+                        <div class="numbertext">25 / 58</div>
+                        <img src="movies/return-king/image22.jpg" style="width:100%">
+                    </div>
+                    
+                    <div class="mySlides">
+                        <div class="numbertext">26 / 58</div>
+                        <img src="movies/return-king/image23.jpg" style="width:100%">
+                    </div>
+                    
+                    <div class="mySlides">
+                        <div class="numbertext">27 / 58</div>
+                        <img src="movies/return-king/image24.jpg" style="width:100%">
+                    </div>
+                    
+                    <div class="mySlides">
+                        <div class="numbertext">28 / 58</div>
+                        <img src="movies/return-king/image25.jpg" style="width:100%">
+                    </div>
+                    
+                    <div class="mySlides">
+                        <div class="numbertext">29 / 58</div>
+                        <img src="movies/return-king/image26.jpg" style="width:100%">
+                    </div>
+                    
+                    <div class="mySlides">
+                        <div class="numbertext">30 / 58</div>
+                        <img src="movies/return-king/image27.jpg" style="width:100%">
+                    </div>
+                    
+                    <div class="mySlides">
+                        <div class="numbertext">31 / 58</div>
+                        <img src="movies/return-king/image28.jpg" style="width:100%">
+                    </div>
+                    
+                    <div class="mySlides">
+                        <div class="numbertext">32 / 58</div>
+                        <img src="movies/return-king/image29.jpg" style="width:100%">
+                    </div>
+                    
+                    <div class="mySlides">
+                        <div class="numbertext">33 / 58</div>
+                        <img src="movies/return-king/image30.jpg" style="width:100%">
+                    </div>
+                    
+                    <div class="mySlides">
+                        <div class="numbertext">34 / 58</div>
+                        <img src="movies/return-king/image31.jpg" style="width:100%">
+                    </div>
+                    
+                    <div class="mySlides">
+                        <div class="numbertext">35 / 58</div>
+                        <img src="movies/return-king/image33.jpg" style="width:100%">
+                    </div>
+                    
+                    <div class="mySlides">
+                        <div class="numbertext">36 / 58</div>
+                        <img src="movies/return-king/image34.jpg" style="width:100%">
+                    </div>
+                    
+                    <div class="mySlides">
+                        <div class="numbertext">37 / 58</div>
+                        <img src="movies/return-king/image35.jpg" style="width:100%">
+                    </div>
+                    
+                    <div class="mySlides">
+                        <div class="numbertext">38 / 58</div>
+                        <img src="movies/return-king/image36.jpg" style="width:100%">
+                    </div>
+                    
+                    <div class="mySlides">
+                        <div class="numbertext">39 / 58</div>
+                        <img src="movies/return-king/image37.jpg" style="width:100%">
+                    </div>
+                    
+                    <div class="mySlides">
+                        <div class="numbertext">40 / 58</div>
+                        <img src="movies/return-king/image38.jpg" style="width:100%">
+                    </div>
+                    
+                    <div class="mySlides">
+                        <div class="numbertext">41 / 58</div>
+                        <img src="movies/return-king/image39.jpg" style="width:100%">
+                    </div>
+                    
+                    <div class="mySlides">
+                        <div class="numbertext">42 / 58</div>
+                        <img src="movies/return-king/image40.jpg" style="width:100%">
+                    </div>
+                    
+                    <div class="mySlides">
+                        <div class="numbertext">43 / 58</div>
+                        <img src="movies/return-king/image41.jpg" style="width:100%">
+                    </div>
+                    
+                    <div class="mySlides">
+                        <div class="numbertext">44 / 58</div>
+                        <img src="movies/return-king/image42.jpg" style="width:100%">
+                    </div>
+                    
+                    <div class="mySlides">
+                        <div class="numbertext">45 / 58</div>
+                        <img src="movies/return-king/image43.jpg" style="width:100%">
+                    </div>
+                    
+                    <div class="mySlides">
+                        <div class="numbertext">46 / 58</div>
+                        <img src="movies/return-king/image44.jpg" style="width:100%">
+                    </div>
+                    
+                    <div class="mySlides">
+                        <div class="numbertext">47 / 58</div>
+                        <img src="movies/return-king/image45.jpg" style="width:100%">
+                    </div>
+                    
+                    <div class="mySlides">
+                        <div class="numbertext">48 / 58</div>
+                        <img src="movies/return-king/image46.jpg" style="width:100%">
+                    </div>
+                    
+                    <div class="mySlides">
+                        <div class="numbertext">49 / 58</div>
+                        <img src="movies/return-king/image48.jpg" style="width:100%">
+                    </div>
+                    
+                    <div class="mySlides">
+                        <div class="numbertext">50 / 58</div>
+                        <img src="movies/return-king/image49.jpg" style="width:100%">
+                    </div>
+                    
+                    <div class="mySlides">
+                        <div class="numbertext">51 / 58</div>
+                        <img src="movies/return-king/image50.jpg" style="width:100%">
+                    </div>
+                    
+                    <div class="mySlides">
+                        <div class="numbertext">52 / 58</div>
+                        <img src="movies/return-king/image50.jpg" style="width:100%">
+                    </div>
+                    
+                    <div class="mySlides">
+                        <div class="numbertext">53 / 58</div>
+                        <img src="movies/return-king/image51.jpg" style="width:100%">
+                    </div>
+                    
+                    <div class="mySlides">
+                        <div class="numbertext">54 / 58</div>
+                        <img src="movies/return-king/image52.jpg" style="width:100%">
+                    </div>
+                    
+                    <div class="mySlides">
+                        <div class="numbertext">55 / 58</div>
+                        <img src="movies/return-king/image53.jpg" style="width:100%">
+                    </div>
+                    
+                    <div class="mySlides">
+                        <div class="numbertext">56 / 58</div>
+                        <img src="movies/return-king/image54.jpg" style="width:100%">
+                    </div>
+                    
+                    <div class="mySlides">
+                        <div class="numbertext">57 / 58</div>
+                        <img src="movies/return-king/image56.jpg" style="width:100%">
+                    </div>
+                    
+                    <div class="mySlides">
+                        <div class="numbertext">58 / 58</div>
+                        <img src="movies/return-king/image57.jpg" style="width:100%">
+                    </div>
+                                            
+                    <!-- Next/previous controls -->
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            
+                    <!-- Caption text -->
+                    <div class="caption-container">
+                        <p id="caption"></p>
+                    </div>
+                </div>
+            </div>     
+            
+            <p></p>
+            
+            <h1>I Stand Against the Shadow.</h1>
+            <hr>
+            
+            <section>
+                <p><em>The Return of the King</em> is a film that thrives on its themes of fate, duty, and the will to resist overwhelming darkness. While earlier films explored personal growth and the bonds of friendship, this final chapter delves into the responsibility that comes with power and the courage required to stand against evil.</p>  
+
+                <p>Aragorn embodies this theme more than any other character. For much of the trilogy, he doubts whether he is worthy of leading, choosing exile over the throne. But as Gondor faces its greatest threat, he recognizes that leadership is not about entitlement—it is about answering the call when others cannot. His decision to march on the Black Gate, knowing it may be a death sentence, is a testament to true heroism: not the absence of fear, but the choice to fight despite it.</p>  
+                
+                <p>Frodo and Sam’s journey to Mount Doom highlights another core theme—the burden of sacrifice. Frodo is physically and mentally shattered by the Ring’s influence, yet he continues forward, knowing that his suffering is necessary for the greater good. Sam, on the other hand, represents the everyday hero, someone who does not seek glory but refuses to abandon those he loves. Their journey reinforces the idea that heroism is not about strength alone, but resilience in the face of despair.</p>  
+            </section>
+            
+            <h1>The Battle for Middle-earth.</h1>
+            <hr>
+
+            <section>
+                <p>Few films capture the sheer scale of war like <em>The Return of the King</em>. The Battle of Pelennor Fields is one of the most breathtaking sequences ever put to screen, combining sweeping cinematography, incredible practical effects, and cutting-edge CGI to bring Middle-earth’s greatest conflict to life. From the moment the beacons of Gondor are lit to the arrival of the Rohirrim, the film builds tension masterfully, making every clash of swords and every charge across the battlefield feel monumental.</p>  
+
+                <p>The charge of the Rohirrim is one of the most iconic moments in the trilogy, a perfect blend of cinematography and music. As King Théoden delivers his final speech, the tension gives way to a triumphant, heartbreaking charge that captures the true cost of war. Meanwhile, the arrival of the Army of the Dead brings an eerie, almost mythical quality to the battle, a reminder of the ancient powers that still linger in Middle-earth.</p>  
+                
+                <p>What makes these battles more than just spectacle is their emotional weight. Every fight carries personal stakes, whether it’s Éowyn’s duel with the Witch-king, Aragorn’s decision to march on the Black Gate, or Frodo’s struggle inside Mount Doom. Unlike many war films, <em>The Return of the King</em> never loses sight of its characters, ensuring that every moment of combat has meaning beyond its visuals.</p>  
+            </section>
+
+            <h1>The Film That Ruled Them All.</h1>
+            <hr>
+
+            <section>
+                <p><em>The Return of the King</em> is not just a technical and storytelling triumph—it is one of the most decorated films in history. At the 76th Academy Awards, it won all 11 Oscars it was nominated for, including Best Picture, Best Director for Peter Jackson, and Best Adapted Screenplay. This historic sweep cemented its place as the only fantasy film to ever win Best Picture, proving that the genre could be taken seriously at the highest levels of filmmaking.</p>  
+
+                <p>Beyond the awards, the film’s impact is immeasurable. It set a new standard for epic storytelling, inspiring countless films and series in the years that followed. From its massive battles to its intimate character moments, every aspect of the film was crafted with painstaking care, ensuring its legacy would endure for generations.</p>  
+                
+                <p>Howard Shore’s Oscar-winning score deserves special mention. His compositions, from the triumphant “The Ride of the Rohirrim” to the deeply emotional “Into the West,” elevate every scene, making the film not just a visual masterpiece but an auditory one as well. Few scores capture the soul of a story as perfectly as Shore’s, and his work remains one of the greatest achievements in film music.</p>  
+            </section>
+
+            <section>
+                <h2>Verdict</h2>
+                <p><em>The Lord of the Rings: The Return of the King</em> is the gold standard for cinematic conclusions. It brings every storyline to a powerful close, delivering unforgettable battles, heart-wrenching farewells, and a sense of finality that few franchises ever achieve. Peter Jackson’s direction, the cast’s performances, and the technical achievements make it not just a great fantasy film, but one of the greatest films ever made.</p>  
+
+                <p>Even after two decades, its themes of hope, sacrifice, and the enduring fight against darkness remain as powerful as ever. Whether you watch it for its sweeping action, its emotional depth, or its rich storytelling, <em>The Return of the King</em> is a film that will stand the test of time. A masterpiece in every sense, it is the ending that Middle-earth—and cinema—deserved.</p>  
+            </section>
+
+            <p></p>
+
+            <h2>In This Article</h2>
+            
+            <!-- New Container After "In This Article" -->
+            <div class="in-this-article">
+                <a href="lotr-return-king-stat.html">
+                    <img src="movies/return-king/return-king-image.jpeg" alt="Article Image" class="article-image">
+                </a>
+                <div class="article-details">
+                    <h3 class="article-title"><a href="lotr-return-king-stat.html">The Lord of the Rings: The Return of the King</a></h3>
+                    <p>NEW LINE CINEMA</p>
+                    <p>DECEMBER 17, 2003</p>
+                </div>
+            </div>
+
+            <div class="review">
+                <h3 class="review-main-title">Lord of the Rings: The Return of the King Review</h3>
+                <div class="review-header2">
+                    <div class="hexagon-container">
+                        <div class="score-hexagon">10</div>
+                    </div>
+                    <div class="review-title">
+                        <h2>Amazing</h2>
+                        <div class="review-description">
+                            <p>A Grand Finale of War, Honor, and the Burden of a Kingdom’s Fate.</p>
+                        </div>
+                        <div class="author">
+                            <img src="assets/author-icon.jpg" alt="Author Icon" style="width: 24px; height: 24px; border-radius: 50%;">
+                            <span><a href="gabriele.html">Gabriele Bosoni</a></span>
+                        </div>
+                    </div>
+                    <div class="trailer-container">
+                        <iframe class="trailer" width="300" height="169" src="https://www.youtube.com/embed/zckJCxYxn1g" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+
+            
+
+        </div>
+    </article>
+
+    <!-- Footer -->
+    <div class="footer">
+        <p>&copy; 2025 Gabriele's Movie Review. All rights reserved.</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

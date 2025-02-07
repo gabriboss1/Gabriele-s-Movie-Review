@@ -1130,19 +1130,17 @@ hr {
     padding: 0;
 }
 
-/* Banner Section */
 .gabriele-banner {
-    width: 50vw; /* Leave 25vw space on left and right */
-    height: 20vw; /* Adjust banner height */
-    background-image: url('assets/banner-image.jpg'); /* Add banner image */
+    width: 50vw;
+    height: 20vw;
+    background-image: url('assets/banner-image.jpg');
     background-size: cover;
     background-position: center;
-    position: relative; /* For positioning the name */
-    border-radius: 12px 12px 0px 0px; /* Rounded top corners */
-    margin-top: -1vw;
+    position: relative; 
+    border-radius: 12px 12px 0px 0px; 
+    margin-top: -2.5vw;
 }
 
-/* Name on the banner */
 .banner-content {
     position: absolute;
     bottom: 0.5vw; /* Positioned at the bottom of the banner */
